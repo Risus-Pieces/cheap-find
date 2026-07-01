@@ -14,6 +14,11 @@ const ROTATION_KEYS: FoodImageKey[] = [
 ];
 
 /** Deterministic — same storeId always maps to the same image */
-export function getStoreImage(storeId: number): string {
-  return FOOD_IMAGES[ROTATION_KEYS[storeId % ROTATION_KEYS.length]];
+export function getStoreImage(storeId: string): string {
+  // Hash the string chars to get a stable index
+  let hash = 0;
+  for (let i = 0; i < storeId.length; i++) {
+    hash = (hash + storeId.charCodeAt(i)) & 0xffff;
+  }
+  return FOOD_IMAGES[ROTATION_KEYS[hash % ROTATION_KEYS.length]];
 }

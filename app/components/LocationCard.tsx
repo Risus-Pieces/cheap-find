@@ -2,31 +2,25 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import type { PriceResult } from "@/lib/chains/types";
-
-// Legacy shape used by this component; Task 9 will replace with canonical Store type
-export interface StoreLocation {
-  id: number;
-  name: string;
-  address: string;
-  lat: number;
-  lng: number;
-  image: string;
-}
-
-// Alias until Task 9 migrates to PriceResult
-export type PriceData = PriceResult & { deliveryPrice: number };
+import type { Store, PriceResult } from "@/lib/chains/types";
 import { FOOD_IMAGES } from "@/lib/images";
 
+// Store augmented with a client-side image URL
+export type StoreWithImage = Store & { image: string };
+
+// Re-export for Map.tsx compatibility
+export type { PriceResult as PriceData };
+
 interface LocationCardProps {
-  store: StoreLocation;
-  price: PriceData | undefined;
+  store: StoreWithImage;
+  price: PriceResult | undefined;
   priceLoading: boolean;
   distance: number;
   rank: number;
   isCheapest: boolean;
   isSelected: boolean;
   isHovered: boolean;
+  benchmarkItem: string;
   onClick: () => void;
   onHover: () => void;
   onHoverEnd: () => void;
@@ -41,6 +35,7 @@ export default function LocationCard({
   isCheapest,
   isSelected,
   isHovered,
+  benchmarkItem,
   onClick,
   onHover,
   onHoverEnd,
@@ -91,7 +86,7 @@ export default function LocationCard({
             </h3>
             {isCheapest && price && (
               <span className="shrink-0 text-xs font-bold text-amber-700 bg-amber-100 rounded-full px-2 py-0.5">
-                ⭐ Cheapest
+                Cheapest
               </span>
             )}
           </div>
@@ -128,15 +123,19 @@ export default function LocationCard({
                   >
                     ${price.price.toFixed(2)}
                   </span>
-                  {price.isLive && (
+                  {price.isLive ? (
                     <span className="text-xs font-bold text-green-600 bg-green-50 border border-green-200 rounded-full px-1.5 py-0.5 uppercase tracking-wide">
                       live
+                    </span>
+                  ) : (
+                    <span className="text-xs font-bold text-amber-600 bg-amber-50 border border-amber-200 rounded-full px-1.5 py-0.5 uppercase tracking-wide">
+                      est.
                     </span>
                   )}
                 </div>
                 <div className="flex items-center gap-1 mt-0.5">
-                  <span className="text-xs text-gray-400 font-medium">pickup</span>
-                  {price.deliveryPrice > 0 && (
+                  <span className="text-xs text-gray-400 font-medium">{benchmarkItem} · pickup</span>
+                  {price.deliveryPrice != null && price.deliveryPrice > 0 && (
                     <>
                       <span className="text-xs text-gray-300">·</span>
                       <span className="text-xs text-gray-400 font-medium">

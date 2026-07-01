@@ -3,7 +3,7 @@
 import { useEffect, useRef, forwardRef, useImperativeHandle } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import type { StoreLocation, PriceData } from "@/app/components/LocationCard";
+import type { StoreWithImage, PriceData } from "@/app/components/LocationCard";
 
 const MAP_STYLE = "https://tiles.openfreemap.org/styles/liberty";
 
@@ -16,12 +16,13 @@ export interface MapHandle {
 interface MapProps {
   userLat: number;
   userLng: number;
-  stores: StoreLocation[];
-  prices: Record<number, PriceData>;
-  cheapestId: number;
-  selectedId: number | null;
-  hoveredId: number | null;
-  onSelectStore: (id: number) => void;
+  stores: StoreWithImage[];
+  prices: Record<string, PriceData>;
+  cheapestId: string | null;
+  selectedId: string | null;
+  hoveredId: string | null;
+  accentColor?: string;
+  onSelectStore: (id: string) => void;
   onMoveEnd: (lat: number, lng: number, zoom: number, bounds: { north: number; south: number; east: number; west: number }) => void;
   showSearchAreaButton: boolean;
   onSearchArea: () => void;
@@ -36,6 +37,7 @@ const RestaurantMap = forwardRef<MapHandle, MapProps>(function RestaurantMap(
     cheapestId,
     selectedId,
     hoveredId,
+    accentColor = "#6b7280",
     onSelectStore,
     onMoveEnd,
     showSearchAreaButton,
@@ -46,7 +48,7 @@ const RestaurantMap = forwardRef<MapHandle, MapProps>(function RestaurantMap(
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const userMarkerRef = useRef<maplibregl.Marker | null>(null);
-  const markersRef = useRef<Record<number, maplibregl.Marker>>({});
+  const markersRef = useRef<Record<string, maplibregl.Marker>>({});
 
   // Expose flyTo, getVisiblePlacePoints, getBounds via ref
   useImperativeHandle(ref, () => ({
@@ -159,21 +161,23 @@ const RestaurantMap = forwardRef<MapHandle, MapProps>(function RestaurantMap(
       const price = prices[store.id];
 
       const active = isSelected || isHovered;
+      // Cheapest gets green; others get the chain accent color
+      const markerColor = isCheapest ? "#16a34a" : accentColor;
       const el = document.createElement("div");
       el.style.cssText = `
         width:${active ? "38px" : "32px"};
         height:${active ? "38px" : "32px"};
         border-radius:50%;
-        background:${isCheapest ? "#16a34a" : "#6b7280"};
+        background:${markerColor};
         border:3px solid white;
         box-shadow:0 2px 8px rgba(0,0,0,${active ? ".45" : ".25"});
         cursor:pointer;
         display:flex;align-items:center;justify-content:center;
         font-size:${active ? "16px" : "13px"};
         transition:all .2s ease;
-        ${active ? `outline:3px solid ${isCheapest ? "#16a34a" : "#374151"};outline-offset:2px;` : ""}
+        ${active ? `outline:3px solid ${markerColor};outline-offset:2px;` : ""}
       `;
-      el.innerHTML = isCheapest ? "⭐" : "🌯";
+      el.innerHTML = isCheapest ? "⭐" : "🍔";
       el.title = store.name;
       el.addEventListener("click", () => onSelectStore(store.id));
 
@@ -199,7 +203,7 @@ const RestaurantMap = forwardRef<MapHandle, MapProps>(function RestaurantMap(
       markersRef.current[store.id] = marker;
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [stores, cheapestId, selectedId, hoveredId, prices]);
+  }, [stores, cheapestId, selectedId, hoveredId, prices, accentColor]);
 
   // ── Fly to selected store ────────────────────────────────────────────────
   useEffect(() => {
