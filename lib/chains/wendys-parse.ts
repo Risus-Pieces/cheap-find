@@ -10,7 +10,9 @@ export function parseStores(json: any): Store[] {
       const lat = parseFloat(s?.lat);
       const lng = parseFloat(s?.lng);
       if (Number.isNaN(lat) || Number.isNaN(lng)) return null;
-      const address = [s.address1, s.city, s.address2].filter(Boolean).join(", ");
+      // address2 is already "CITY, ST ZIP" in the real API — only fall back
+      // to city when address2 is missing, to avoid duplicating the city.
+      const address = [s.address1, s.address2 ?? s.city].filter(Boolean).join(", ");
       return {
         id: String(s.id),
         name: `Wendy's – ${s.name ?? s.address1}`,

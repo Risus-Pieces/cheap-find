@@ -14,6 +14,7 @@ describe("wendys parsers", () => {
     expect(typeof s.lat).toBe("number");
     expect(s.lat).toBeCloseTo(41.9029, 2);
     expect(s.address).toContain("CHICAGO");
+    expect(s.address).not.toMatch(/CHICAGO.*CHICAGO/);
   });
 
   it("parses the Dave's Single price from a site menu", () => {
