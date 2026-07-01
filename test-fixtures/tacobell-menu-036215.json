@@ -1,0 +1,64 @@
+{
+ "note": "trimmed to Crunchwrap Supreme priced entry",
+ "crunchwrapSupreme": {
+  "accurateCalorie": "534.7357",
+  "code": "22362",
+  "calories": "530",
+  "categories": [
+   {
+    "code": "Food"
+   }
+  ],
+  "caloriesDisplayText": "Cal",
+  "dayPartMessages": [],
+  "defaultProtein": false,
+  "foodType": "Sellable_food",
+  "hasAVA": false,
+  "hasMeatless": false,
+  "images": [
+   {
+    "imageType": "PRIMARY",
+    "format": "269x269",
+    "type": "IMAGE",
+    "url": "https://www.tacobell.com/images/22362_crunchwrap_supreme_269x269.jpg"
+   },
+   {
+    "imageType": "PRIMARY",
+    "format": "750x340",
+    "type": "IMAGE",
+    "url": "https://www.tacobell.com/images/22362_crunchwrap_supreme_750x340.jpg"
+   }
+  ],
+  "isAvailableInStore": true,
+  "isDigitalProduct": false,
+  "isDisplayedOnStore": true,
+  "isFountain": false,
+  "itemType": "Product",
+  "maxOrderQuantity": 50,
+  "maxProductCount": 0,
+  "modifiable": true,
+  "name": "Crunchwrap Supreme\u00ae",
+  "pdpMasthead": {
+   "type": "IMAGE"
+  },
+  "price": {
+   "currencyIso": "USD",
+   "formattedValue": "$8.49",
+   "priceType": "BUY",
+   "value": 8.49
+  },
+  "priceRange": {},
+  "primaryCategory": "specialties",
+  "primaryCategoryCode": "specialties",
+  "productCount": 0,
+  "productImageUrl": "/images/22362_crunchwrap_supreme",
+  "productType": "Standard",
+  "purchasable": true,
+  "searchable": true,
+  "showAddedIngredientCalories": false,
+  "showOnDelivery": true,
+  "sodiumIndication": false,
+  "sugarIndication": false,
+  "url": "/food/specialties/crunchwrap-supreme"
+ }
+}

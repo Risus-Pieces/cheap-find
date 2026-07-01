@@ -1,0 +1,4272 @@
+{
+ "pagination": {
+  "currentPage": 0,
+  "totalResults": 0,
+  "pageSize": 0,
+  "totalPages": 0
+ },
+ "sourceLatitude": 41.8781,
+ "sourceLongitude": -87.6298,
+ "boundNorthLatitude": "unused",
+ "boundSouthLatitude": "unused",
+ "boundWestLongitude": "unused",
+ "boundEastLongitude": "unused",
+ "cartIsEmpty": false,
+ "favoriteStores": [],
+ "nearByStores": [
+  {
+   "storeStatus": "openNow",
+   "pickupStoreStatusForLocation": "Activated",
+   "pickupStoreStatusForCheckout": "Activated",
+   "phoneNumber": "+17739042737",
+   "pickupShelves": true,
+   "storeNumber": "036215",
+   "timeZone": "GMT-05:00",
+   "timeZoneCity": "America/Chicago",
+   "roundUpFlag": true,
+   "qrCodeEnabled": false,
+   "cupChargeParticipation": false,
+   "previouslyOrdered": false,
+   "todayBusinessHours": {
+    "closingTime": {
+     "formattedHour": "2:00 AM",
+     "hour": 2,
+     "minute": 0
+    },
+    "openingTime": {
+     "hour": 10,
+     "minute": 0,
+     "formattedHour": "10:00 AM"
+    },
+    "weekDay": "Wednesday",
+    "dayparts": [
+     {
+      "allDay": false,
+      "closed": false,
+      "daypart": {
+       "allDay": false,
+       "closed": false,
+       "showWarning": true,
+       "afterMessageDetail": "",
+       "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+       "name": "Balance Of Day",
+       "beforeEndTimeMinutes": 5,
+       "closedMessageDetail": "",
+       "closedMessageTitle": "",
+       "endMessageDetail": "",
+       "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+       "presetMinutes": 30,
+       "startMessageDetail": "",
+       "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+       "warningPriority": 60
+      },
+      "endTime": {
+       "formattedHour": "2:00 AM",
+       "hour": 2,
+       "minute": 0
+      },
+      "startTime": {
+       "formattedHour": "10:00 AM",
+       "hour": 10,
+       "minute": 0
+      }
+     },
+     {
+      "allDay": false,
+      "closed": true,
+      "daypart": {
+       "allDay": false,
+       "closed": true,
+       "showWarning": true,
+       "afterMessageDetail": "",
+       "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+       "name": "Breakfast",
+       "beforeEndTimeMinutes": 5,
+       "closedMessageDetail": "Breakfast Is Currently Unavailable",
+       "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+       "endMessageDetail": "",
+       "endMessageTitle": "Breakfast Is Ending Soon",
+       "presetMinutes": 30,
+       "startMessageDetail": "",
+       "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+       "warningPriority": 10
+      },
+      "endTime": {
+       "formattedHour": "4:15 AM",
+       "hour": 4,
+       "minute": 15
+      },
+      "startTime": {
+       "formattedHour": "4:15 AM",
+       "hour": 4,
+       "minute": 15
+      }
+     },
+     {
+      "allDay": false,
+      "closed": false,
+      "daypart": {
+       "allDay": false,
+       "closed": false,
+       "showWarning": true,
+       "afterMessageDetail": "",
+       "afterMessageTitle": "",
+       "name": "Dine In",
+       "beforeEndTimeMinutes": 5,
+       "closedMessageDetail": "",
+       "closedMessageTitle": "",
+       "endMessageDetail": "",
+       "endMessageTitle": "",
+       "presetMinutes": 30,
+       "startMessageDetail": "",
+       "startMessageTitle": "",
+       "warningPriority": 20
+      },
+      "endTime": {
+       "formattedHour": "2:00 AM",
+       "hour": 2,
+       "minute": 0
+      },
+      "startTime": {
+       "formattedHour": "10:00 AM",
+       "hour": 10,
+       "minute": 0
+      }
+     },
+     {
+      "allDay": false,
+      "closed": true,
+      "daypart": {
+       "allDay": false,
+       "closed": true,
+       "showWarning": true,
+       "afterMessageDetail": "",
+       "afterMessageTitle": "",
+       "name": "Drive Thru",
+       "beforeEndTimeMinutes": 5,
+       "closedMessageDetail": "",
+       "closedMessageTitle": "",
+       "endMessageDetail": "",
+       "endMessageTitle": "",
+       "presetMinutes": 30,
+       "startMessageDetail": "",
+       "startMessageTitle": "",
+       "warningPriority": 30
+      },
+      "endTime": {
+       "formattedHour": "12:00 AM",
+       "hour": 12,
+       "minute": 0
+      },
+      "startTime": {
+       "formattedHour": "10:00 AM",
+       "hour": 10,
+       "minute": 0
+      }
+     },
+     {
+      "allDay": false,
+      "closed": false,
+      "daypart": {
+       "allDay": false,
+       "closed": false,
+       "showWarning": true,
+       "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+       "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+       "name": "Happy Hour",
+       "beforeEndTimeMinutes": 5,
+       "closedMessageDetail": "",
+       "closedMessageTitle": "(C)",
+       "endMessageDetail": "Happier hour is from 2pm-5pm.",
+       "endMessageTitle": "Happier Hour Is Ending Soon",
+       "presetMinutes": 30,
+       "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+       "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+       "warningPriority": 50
+      },
+      "endTime": {
+       "formattedHour": "5:00 PM",
+       "hour": 5,
+       "minute": 0
+      },
+      "startTime": {
+       "formattedHour": "2:00 PM",
+       "hour": 2,
+       "minute": 0
+      }
+     }
+    ]
+   },
+   "delivery": true,
+   "autoCheckIn": false,
+   "address": {
+    "country": {
+     "isocode": "US"
+    },
+    "line1": "407 S. Dearborn",
+    "line2": null,
+    "postalCode": "60605",
+    "region": {
+     "isocode": "US-IL"
+    },
+    "town": "Chicago"
+   },
+   "capabilities": {
+    "breakfast": false,
+    "connectMeEnabled": true,
+    "deliveryEnabled": true,
+    "driveThru": false,
+    "driveThruPriorityPickupLane": false,
+    "isPickRestaurant": true,
+    "liveMasCafeEnabled": false,
+    "mobileEnabled": true,
+    "online": true,
+    "openLate": true,
+    "pickupShelves": true
+   },
+   "currentOnlineAvailable": true,
+   "driveThruPriorityPickupLane": false,
+   "geoPoint": {
+    "latitude": 41.8764164973,
+    "longitude": -87.6288615576
+   },
+   "geofencingEnabled": true,
+   "geofencingRadius": 3,
+   "name": "036215",
+   "openingHours": {
+    "code": "tacobell-store-hours-AG Bells II LLC",
+    "isBreakFastAvailable": false,
+    "weekDayOpeningList": [
+     {
+      "closingTime": {
+       "formattedHour": "2:00 AM",
+       "hour": 2,
+       "minute": 0
+      },
+      "openingTime": {
+       "hour": 10,
+       "minute": 0,
+       "formattedHour": "10:00 AM"
+      },
+      "weekDay": "Monday",
+      "dayparts": [
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "name": "Balance Of Day",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+         "warningPriority": 60
+        },
+        "endTime": {
+         "formattedHour": "2:00 AM",
+         "hour": 2,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+         "name": "Breakfast",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "Breakfast Is Currently Unavailable",
+         "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+         "endMessageDetail": "",
+         "endMessageTitle": "Breakfast Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+         "warningPriority": 10
+        },
+        "endTime": {
+         "formattedHour": "4:15 AM",
+         "hour": 4,
+         "minute": 15
+        },
+        "startTime": {
+         "formattedHour": "4:15 AM",
+         "hour": 4,
+         "minute": 15
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Dine In",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 20
+        },
+        "endTime": {
+         "formattedHour": "2:00 AM",
+         "hour": 2,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Drive Thru",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 30
+        },
+        "endTime": {
+         "formattedHour": "12:00 AM",
+         "hour": 12,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+         "name": "Happy Hour",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "(C)",
+         "endMessageDetail": "Happier hour is from 2pm-5pm.",
+         "endMessageTitle": "Happier Hour Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+         "warningPriority": 50
+        },
+        "endTime": {
+         "formattedHour": "5:00 PM",
+         "hour": 5,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "2:00 PM",
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      ]
+     },
+     {
+      "closingTime": {
+       "formattedHour": "2:00 AM",
+       "hour": 2,
+       "minute": 0
+      },
+      "openingTime": {
+       "hour": 10,
+       "minute": 0,
+       "formattedHour": "10:00 AM"
+      },
+      "weekDay": "Tuesday",
+      "dayparts": [
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "name": "Balance Of Day",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+         "warningPriority": 60
+        },
+        "endTime": {
+         "formattedHour": "2:00 AM",
+         "hour": 2,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+         "name": "Breakfast",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "Breakfast Is Currently Unavailable",
+         "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+         "endMessageDetail": "",
+         "endMessageTitle": "Breakfast Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+         "warningPriority": 10
+        },
+        "endTime": {
+         "formattedHour": "4:15 AM",
+         "hour": 4,
+         "minute": 15
+        },
+        "startTime": {
+         "formattedHour": "4:15 AM",
+         "hour": 4,
+         "minute": 15
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Dine In",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 20
+        },
+        "endTime": {
+         "formattedHour": "2:00 AM",
+         "hour": 2,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Drive Thru",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 30
+        },
+        "endTime": {
+         "formattedHour": "12:00 AM",
+         "hour": 12,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+         "name": "Happy Hour",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "(C)",
+         "endMessageDetail": "Happier hour is from 2pm-5pm.",
+         "endMessageTitle": "Happier Hour Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+         "warningPriority": 50
+        },
+        "endTime": {
+         "formattedHour": "5:00 PM",
+         "hour": 5,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "2:00 PM",
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      ]
+     },
+     {
+      "closingTime": {
+       "formattedHour": "2:00 AM",
+       "hour": 2,
+       "minute": 0
+      },
+      "openingTime": {
+       "hour": 10,
+       "minute": 0,
+       "formattedHour": "10:00 AM"
+      },
+      "weekDay": "Wednesday",
+      "dayparts": [
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "name": "Balance Of Day",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+         "warningPriority": 60
+        },
+        "endTime": {
+         "formattedHour": "2:00 AM",
+         "hour": 2,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+         "name": "Breakfast",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "Breakfast Is Currently Unavailable",
+         "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+         "endMessageDetail": "",
+         "endMessageTitle": "Breakfast Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+         "warningPriority": 10
+        },
+        "endTime": {
+         "formattedHour": "4:15 AM",
+         "hour": 4,
+         "minute": 15
+        },
+        "startTime": {
+         "formattedHour": "4:15 AM",
+         "hour": 4,
+         "minute": 15
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Dine In",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 20
+        },
+        "endTime": {
+         "formattedHour": "2:00 AM",
+         "hour": 2,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Drive Thru",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 30
+        },
+        "endTime": {
+         "formattedHour": "12:00 AM",
+         "hour": 12,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+         "name": "Happy Hour",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "(C)",
+         "endMessageDetail": "Happier hour is from 2pm-5pm.",
+         "endMessageTitle": "Happier Hour Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+         "warningPriority": 50
+        },
+        "endTime": {
+         "formattedHour": "5:00 PM",
+         "hour": 5,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "2:00 PM",
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      ]
+     },
+     {
+      "closingTime": {
+       "formattedHour": "2:00 AM",
+       "hour": 2,
+       "minute": 0
+      },
+      "openingTime": {
+       "hour": 10,
+       "minute": 0,
+       "formattedHour": "10:00 AM"
+      },
+      "weekDay": "Thursday",
+      "dayparts": [
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "name": "Balance Of Day",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+         "warningPriority": 60
+        },
+        "endTime": {
+         "formattedHour": "2:00 AM",
+         "hour": 2,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+         "name": "Breakfast",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "Breakfast Is Currently Unavailable",
+         "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+         "endMessageDetail": "",
+         "endMessageTitle": "Breakfast Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+         "warningPriority": 10
+        },
+        "endTime": {
+         "formattedHour": "4:15 AM",
+         "hour": 4,
+         "minute": 15
+        },
+        "startTime": {
+         "formattedHour": "4:15 AM",
+         "hour": 4,
+         "minute": 15
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Dine In",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 20
+        },
+        "endTime": {
+         "formattedHour": "2:00 AM",
+         "hour": 2,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Drive Thru",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 30
+        },
+        "endTime": {
+         "formattedHour": "12:00 AM",
+         "hour": 12,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+         "name": "Happy Hour",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "(C)",
+         "endMessageDetail": "Happier hour is from 2pm-5pm.",
+         "endMessageTitle": "Happier Hour Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+         "warningPriority": 50
+        },
+        "endTime": {
+         "formattedHour": "5:00 PM",
+         "hour": 5,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "2:00 PM",
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      ]
+     },
+     {
+      "closingTime": {
+       "formattedHour": "3:00 AM",
+       "hour": 3,
+       "minute": 0
+      },
+      "openingTime": {
+       "hour": 10,
+       "minute": 0,
+       "formattedHour": "10:00 AM"
+      },
+      "weekDay": "Friday",
+      "dayparts": [
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "name": "Balance Of Day",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+         "warningPriority": 60
+        },
+        "endTime": {
+         "formattedHour": "3:00 AM",
+         "hour": 3,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+         "name": "Breakfast",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "Breakfast Is Currently Unavailable",
+         "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+         "endMessageDetail": "",
+         "endMessageTitle": "Breakfast Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+         "warningPriority": 10
+        },
+        "endTime": {
+         "formattedHour": "4:15 AM",
+         "hour": 4,
+         "minute": 15
+        },
+        "startTime": {
+         "formattedHour": "4:15 AM",
+         "hour": 4,
+         "minute": 15
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Dine In",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 20
+        },
+        "endTime": {
+         "formattedHour": "3:00 AM",
+         "hour": 3,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Drive Thru",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 30
+        },
+        "endTime": {
+         "formattedHour": "1:00 AM",
+         "hour": 1,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+         "name": "Happy Hour",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "(C)",
+         "endMessageDetail": "Happier hour is from 2pm-5pm.",
+         "endMessageTitle": "Happier Hour Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+         "warningPriority": 50
+        },
+        "endTime": {
+         "formattedHour": "5:00 PM",
+         "hour": 5,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "2:00 PM",
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      ]
+     },
+     {
+      "closingTime": {
+       "formattedHour": "3:00 AM",
+       "hour": 3,
+       "minute": 0
+      },
+      "openingTime": {
+       "hour": 10,
+       "minute": 0,
+       "formattedHour": "10:00 AM"
+      },
+      "weekDay": "Saturday",
+      "dayparts": [
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "name": "Balance Of Day",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+         "warningPriority": 60
+        },
+        "endTime": {
+         "formattedHour": "3:00 AM",
+         "hour": 3,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+         "name": "Breakfast",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "Breakfast Is Currently Unavailable",
+         "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+         "endMessageDetail": "",
+         "endMessageTitle": "Breakfast Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+         "warningPriority": 10
+        },
+        "endTime": {
+         "formattedHour": "4:15 AM",
+         "hour": 4,
+         "minute": 15
+        },
+        "startTime": {
+         "formattedHour": "4:15 AM",
+         "hour": 4,
+         "minute": 15
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Dine In",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 20
+        },
+        "endTime": {
+         "formattedHour": "3:00 AM",
+         "hour": 3,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Drive Thru",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 30
+        },
+        "endTime": {
+         "formattedHour": "1:00 AM",
+         "hour": 1,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+         "name": "Happy Hour",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "(C)",
+         "endMessageDetail": "Happier hour is from 2pm-5pm.",
+         "endMessageTitle": "Happier Hour Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+         "warningPriority": 50
+        },
+        "endTime": {
+         "formattedHour": "5:00 PM",
+         "hour": 5,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "2:00 PM",
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      ]
+     },
+     {
+      "closingTime": {
+       "formattedHour": "2:00 AM",
+       "hour": 2,
+       "minute": 0
+      },
+      "openingTime": {
+       "hour": 10,
+       "minute": 0,
+       "formattedHour": "10:00 AM"
+      },
+      "weekDay": "Sunday",
+      "dayparts": [
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "name": "Balance Of Day",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+         "warningPriority": 60
+        },
+        "endTime": {
+         "formattedHour": "2:00 AM",
+         "hour": 2,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+         "name": "Breakfast",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "Breakfast Is Currently Unavailable",
+         "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+         "endMessageDetail": "",
+         "endMessageTitle": "Breakfast Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+         "warningPriority": 10
+        },
+        "endTime": {
+         "formattedHour": "4:15 AM",
+         "hour": 4,
+         "minute": 15
+        },
+        "startTime": {
+         "formattedHour": "4:15 AM",
+         "hour": 4,
+         "minute": 15
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Dine In",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 20
+        },
+        "endTime": {
+         "formattedHour": "2:00 AM",
+         "hour": 2,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Drive Thru",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 30
+        },
+        "endTime": {
+         "formattedHour": "12:00 AM",
+         "hour": 12,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+         "name": "Happy Hour",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "(C)",
+         "endMessageDetail": "Happier hour is from 2pm-5pm.",
+         "endMessageTitle": "Happier Hour Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+         "warningPriority": 50
+        },
+        "endTime": {
+         "formattedHour": "5:00 PM",
+         "hour": 5,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "2:00 PM",
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "previousStoreNumber": "033490",
+   "formattedDistance": "0.13 Miles"
+  },
+  {
+   "storeStatus": "openNow",
+   "pickupStoreStatusForLocation": "Activated",
+   "pickupStoreStatusForCheckout": "Activated",
+   "phoneNumber": "+13125788751",
+   "pickupShelves": false,
+   "storeNumber": "037107",
+   "timeZone": "GMT-05:00",
+   "timeZoneCity": "America/Chicago",
+   "roundUpFlag": true,
+   "qrCodeEnabled": false,
+   "cupChargeParticipation": false,
+   "previouslyOrdered": false,
+   "todayBusinessHours": {
+    "closingTime": {
+     "formattedHour": "2:00 AM",
+     "hour": 2,
+     "minute": 0
+    },
+    "openingTime": {
+     "hour": 9,
+     "minute": 0,
+     "formattedHour": "9:00 AM"
+    },
+    "weekDay": "Wednesday",
+    "dayparts": [
+     {
+      "allDay": false,
+      "closed": false,
+      "daypart": {
+       "allDay": false,
+       "closed": false,
+       "showWarning": true,
+       "afterMessageDetail": "",
+       "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+       "name": "Balance Of Day",
+       "beforeEndTimeMinutes": 5,
+       "closedMessageDetail": "",
+       "closedMessageTitle": "",
+       "endMessageDetail": "",
+       "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+       "presetMinutes": 30,
+       "startMessageDetail": "",
+       "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+       "warningPriority": 60
+      },
+      "endTime": {
+       "formattedHour": "2:00 AM",
+       "hour": 2,
+       "minute": 0
+      },
+      "startTime": {
+       "formattedHour": "9:00 AM",
+       "hour": 9,
+       "minute": 0
+      }
+     },
+     {
+      "allDay": false,
+      "closed": false,
+      "daypart": {
+       "allDay": false,
+       "closed": false,
+       "showWarning": true,
+       "afterMessageDetail": "",
+       "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+       "name": "Breakfast",
+       "beforeEndTimeMinutes": 5,
+       "closedMessageDetail": "Breakfast Is Currently Unavailable",
+       "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+       "endMessageDetail": "",
+       "endMessageTitle": "Breakfast Is Ending Soon",
+       "presetMinutes": 30,
+       "startMessageDetail": "",
+       "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+       "warningPriority": 10
+      },
+      "endTime": {
+       "formattedHour": "11:00 AM",
+       "hour": 11,
+       "minute": 0
+      },
+      "startTime": {
+       "formattedHour": "9:00 AM",
+       "hour": 9,
+       "minute": 0
+      }
+     },
+     {
+      "allDay": false,
+      "closed": false,
+      "daypart": {
+       "allDay": false,
+       "closed": false,
+       "showWarning": true,
+       "afterMessageDetail": "",
+       "afterMessageTitle": "",
+       "name": "Dine In",
+       "beforeEndTimeMinutes": 5,
+       "closedMessageDetail": "",
+       "closedMessageTitle": "",
+       "endMessageDetail": "",
+       "endMessageTitle": "",
+       "presetMinutes": 30,
+       "startMessageDetail": "",
+       "startMessageTitle": "",
+       "warningPriority": 20
+      },
+      "endTime": {
+       "formattedHour": "2:00 AM",
+       "hour": 2,
+       "minute": 0
+      },
+      "startTime": {
+       "formattedHour": "9:00 AM",
+       "hour": 9,
+       "minute": 0
+      }
+     },
+     {
+      "allDay": false,
+      "closed": true,
+      "daypart": {
+       "allDay": false,
+       "closed": true,
+       "showWarning": true,
+       "afterMessageDetail": "",
+       "afterMessageTitle": "",
+       "name": "Drive Thru",
+       "beforeEndTimeMinutes": 5,
+       "closedMessageDetail": "",
+       "closedMessageTitle": "",
+       "endMessageDetail": "",
+       "endMessageTitle": "",
+       "presetMinutes": 30,
+       "startMessageDetail": "",
+       "startMessageTitle": "",
+       "warningPriority": 30
+      },
+      "endTime": {
+       "formattedHour": "1:15 AM",
+       "hour": 1,
+       "minute": 15
+      },
+      "startTime": {
+       "formattedHour": "10:00 AM",
+       "hour": 10,
+       "minute": 0
+      }
+     },
+     {
+      "allDay": false,
+      "closed": false,
+      "daypart": {
+       "allDay": false,
+       "closed": false,
+       "showWarning": true,
+       "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+       "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+       "name": "Happy Hour",
+       "beforeEndTimeMinutes": 5,
+       "closedMessageDetail": "",
+       "closedMessageTitle": "(C)",
+       "endMessageDetail": "Happier hour is from 2pm-5pm.",
+       "endMessageTitle": "Happier Hour Is Ending Soon",
+       "presetMinutes": 30,
+       "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+       "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+       "warningPriority": 50
+      },
+      "endTime": {
+       "formattedHour": "5:00 PM",
+       "hour": 5,
+       "minute": 0
+      },
+      "startTime": {
+       "formattedHour": "2:00 PM",
+       "hour": 2,
+       "minute": 0
+      }
+     }
+    ]
+   },
+   "delivery": true,
+   "autoCheckIn": false,
+   "address": {
+    "country": {
+     "isocode": "US"
+    },
+    "line1": "178 North Wabash Ave",
+    "line2": null,
+    "postalCode": "60601",
+    "region": {
+     "isocode": "US-IL"
+    },
+    "town": "Chicago"
+   },
+   "capabilities": {
+    "breakfast": true,
+    "connectMeEnabled": true,
+    "deliveryEnabled": true,
+    "driveThru": false,
+    "driveThruPriorityPickupLane": false,
+    "isPickRestaurant": true,
+    "liveMasCafeEnabled": false,
+    "mobileEnabled": true,
+    "online": true,
+    "openLate": true,
+    "pickupShelves": false
+   },
+   "currentOnlineAvailable": true,
+   "driveThruPriorityPickupLane": false,
+   "geoPoint": {
+    "latitude": 41.8853850833,
+    "longitude": -87.6264673061
+   },
+   "geofencingEnabled": true,
+   "geofencingRadius": 3,
+   "name": "037107",
+   "openingHours": {
+    "code": "tacobell-store-hours-Diza Tacos Wabash, LLC",
+    "isBreakFastAvailable": true,
+    "weekDayOpeningList": [
+     {
+      "closingTime": {
+       "formattedHour": "2:00 AM",
+       "hour": 2,
+       "minute": 0
+      },
+      "openingTime": {
+       "hour": 9,
+       "minute": 0,
+       "formattedHour": "9:00 AM"
+      },
+      "weekDay": "Monday",
+      "dayparts": [
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "name": "Balance Of Day",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+         "warningPriority": 60
+        },
+        "endTime": {
+         "formattedHour": "2:00 AM",
+         "hour": 2,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+         "name": "Breakfast",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "Breakfast Is Currently Unavailable",
+         "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+         "endMessageDetail": "",
+         "endMessageTitle": "Breakfast Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+         "warningPriority": 10
+        },
+        "endTime": {
+         "formattedHour": "11:00 AM",
+         "hour": 11,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Dine In",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 20
+        },
+        "endTime": {
+         "formattedHour": "2:00 AM",
+         "hour": 2,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Drive Thru",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 30
+        },
+        "endTime": {
+         "formattedHour": "1:15 AM",
+         "hour": 1,
+         "minute": 15
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+         "name": "Happy Hour",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "(C)",
+         "endMessageDetail": "Happier hour is from 2pm-5pm.",
+         "endMessageTitle": "Happier Hour Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+         "warningPriority": 50
+        },
+        "endTime": {
+         "formattedHour": "5:00 PM",
+         "hour": 5,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "2:00 PM",
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      ]
+     },
+     {
+      "closingTime": {
+       "formattedHour": "2:00 AM",
+       "hour": 2,
+       "minute": 0
+      },
+      "openingTime": {
+       "hour": 9,
+       "minute": 0,
+       "formattedHour": "9:00 AM"
+      },
+      "weekDay": "Tuesday",
+      "dayparts": [
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "name": "Balance Of Day",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+         "warningPriority": 60
+        },
+        "endTime": {
+         "formattedHour": "2:00 AM",
+         "hour": 2,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+         "name": "Breakfast",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "Breakfast Is Currently Unavailable",
+         "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+         "endMessageDetail": "",
+         "endMessageTitle": "Breakfast Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+         "warningPriority": 10
+        },
+        "endTime": {
+         "formattedHour": "11:00 AM",
+         "hour": 11,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Dine In",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 20
+        },
+        "endTime": {
+         "formattedHour": "2:00 AM",
+         "hour": 2,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Drive Thru",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 30
+        },
+        "endTime": {
+         "formattedHour": "1:15 AM",
+         "hour": 1,
+         "minute": 15
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+         "name": "Happy Hour",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "(C)",
+         "endMessageDetail": "Happier hour is from 2pm-5pm.",
+         "endMessageTitle": "Happier Hour Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+         "warningPriority": 50
+        },
+        "endTime": {
+         "formattedHour": "5:00 PM",
+         "hour": 5,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "2:00 PM",
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      ]
+     },
+     {
+      "closingTime": {
+       "formattedHour": "2:00 AM",
+       "hour": 2,
+       "minute": 0
+      },
+      "openingTime": {
+       "hour": 9,
+       "minute": 0,
+       "formattedHour": "9:00 AM"
+      },
+      "weekDay": "Wednesday",
+      "dayparts": [
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "name": "Balance Of Day",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+         "warningPriority": 60
+        },
+        "endTime": {
+         "formattedHour": "2:00 AM",
+         "hour": 2,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+         "name": "Breakfast",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "Breakfast Is Currently Unavailable",
+         "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+         "endMessageDetail": "",
+         "endMessageTitle": "Breakfast Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+         "warningPriority": 10
+        },
+        "endTime": {
+         "formattedHour": "11:00 AM",
+         "hour": 11,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Dine In",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 20
+        },
+        "endTime": {
+         "formattedHour": "2:00 AM",
+         "hour": 2,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Drive Thru",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 30
+        },
+        "endTime": {
+         "formattedHour": "1:15 AM",
+         "hour": 1,
+         "minute": 15
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+         "name": "Happy Hour",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "(C)",
+         "endMessageDetail": "Happier hour is from 2pm-5pm.",
+         "endMessageTitle": "Happier Hour Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+         "warningPriority": 50
+        },
+        "endTime": {
+         "formattedHour": "5:00 PM",
+         "hour": 5,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "2:00 PM",
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      ]
+     },
+     {
+      "closingTime": {
+       "formattedHour": "2:00 AM",
+       "hour": 2,
+       "minute": 0
+      },
+      "openingTime": {
+       "hour": 9,
+       "minute": 0,
+       "formattedHour": "9:00 AM"
+      },
+      "weekDay": "Thursday",
+      "dayparts": [
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "name": "Balance Of Day",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+         "warningPriority": 60
+        },
+        "endTime": {
+         "formattedHour": "2:00 AM",
+         "hour": 2,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+         "name": "Breakfast",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "Breakfast Is Currently Unavailable",
+         "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+         "endMessageDetail": "",
+         "endMessageTitle": "Breakfast Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+         "warningPriority": 10
+        },
+        "endTime": {
+         "formattedHour": "11:00 AM",
+         "hour": 11,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Dine In",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 20
+        },
+        "endTime": {
+         "formattedHour": "2:00 AM",
+         "hour": 2,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Drive Thru",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 30
+        },
+        "endTime": {
+         "formattedHour": "1:15 AM",
+         "hour": 1,
+         "minute": 15
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+         "name": "Happy Hour",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "(C)",
+         "endMessageDetail": "Happier hour is from 2pm-5pm.",
+         "endMessageTitle": "Happier Hour Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+         "warningPriority": 50
+        },
+        "endTime": {
+         "formattedHour": "5:00 PM",
+         "hour": 5,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "2:00 PM",
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      ]
+     },
+     {
+      "closingTime": {
+       "formattedHour": "5:30 AM",
+       "hour": 5,
+       "minute": 30
+      },
+      "openingTime": {
+       "hour": 8,
+       "minute": 0,
+       "formattedHour": "8:00 AM"
+      },
+      "weekDay": "Friday",
+      "dayparts": [
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "name": "Balance Of Day",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+         "warningPriority": 60
+        },
+        "endTime": {
+         "formattedHour": "5:30 AM",
+         "hour": 5,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "8:00 AM",
+         "hour": 8,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+         "name": "Breakfast",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "Breakfast Is Currently Unavailable",
+         "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+         "endMessageDetail": "",
+         "endMessageTitle": "Breakfast Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+         "warningPriority": 10
+        },
+        "endTime": {
+         "formattedHour": "11:00 AM",
+         "hour": 11,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "8:00 AM",
+         "hour": 8,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Dine In",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 20
+        },
+        "endTime": {
+         "formattedHour": "5:30 AM",
+         "hour": 5,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "8:00 AM",
+         "hour": 8,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Drive Thru",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 30
+        },
+        "endTime": {
+         "formattedHour": "4:15 AM",
+         "hour": 4,
+         "minute": 15
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+         "name": "Happy Hour",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "(C)",
+         "endMessageDetail": "Happier hour is from 2pm-5pm.",
+         "endMessageTitle": "Happier Hour Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+         "warningPriority": 50
+        },
+        "endTime": {
+         "formattedHour": "5:00 PM",
+         "hour": 5,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "2:00 PM",
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      ]
+     },
+     {
+      "closingTime": {
+       "formattedHour": "5:30 AM",
+       "hour": 5,
+       "minute": 30
+      },
+      "openingTime": {
+       "hour": 5,
+       "minute": 45,
+       "formattedHour": "5:45 AM"
+      },
+      "weekDay": "Saturday",
+      "dayparts": [
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "name": "Balance Of Day",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+         "warningPriority": 60
+        },
+        "endTime": {
+         "formattedHour": "5:30 AM",
+         "hour": 5,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "5:45 AM",
+         "hour": 5,
+         "minute": 45
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+         "name": "Breakfast",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "Breakfast Is Currently Unavailable",
+         "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+         "endMessageDetail": "",
+         "endMessageTitle": "Breakfast Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+         "warningPriority": 10
+        },
+        "endTime": {
+         "formattedHour": "11:00 AM",
+         "hour": 11,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "5:45 AM",
+         "hour": 5,
+         "minute": 45
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Dine In",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 20
+        },
+        "endTime": {
+         "formattedHour": "5:30 AM",
+         "hour": 5,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "5:45 AM",
+         "hour": 5,
+         "minute": 45
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Drive Thru",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 30
+        },
+        "endTime": {
+         "formattedHour": "4:15 AM",
+         "hour": 4,
+         "minute": 15
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+         "name": "Happy Hour",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "(C)",
+         "endMessageDetail": "Happier hour is from 2pm-5pm.",
+         "endMessageTitle": "Happier Hour Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+         "warningPriority": 50
+        },
+        "endTime": {
+         "formattedHour": "5:00 PM",
+         "hour": 5,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "2:00 PM",
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      ]
+     },
+     {
+      "closingTime": {
+       "formattedHour": "2:00 AM",
+       "hour": 2,
+       "minute": 0
+      },
+      "openingTime": {
+       "hour": 5,
+       "minute": 45,
+       "formattedHour": "5:45 AM"
+      },
+      "weekDay": "Sunday",
+      "dayparts": [
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "name": "Balance Of Day",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+         "warningPriority": 60
+        },
+        "endTime": {
+         "formattedHour": "2:00 AM",
+         "hour": 2,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "5:45 AM",
+         "hour": 5,
+         "minute": 45
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+         "name": "Breakfast",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "Breakfast Is Currently Unavailable",
+         "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+         "endMessageDetail": "",
+         "endMessageTitle": "Breakfast Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+         "warningPriority": 10
+        },
+        "endTime": {
+         "formattedHour": "11:00 AM",
+         "hour": 11,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "5:45 AM",
+         "hour": 5,
+         "minute": 45
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Dine In",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 20
+        },
+        "endTime": {
+         "formattedHour": "2:00 AM",
+         "hour": 2,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "5:45 AM",
+         "hour": 5,
+         "minute": 45
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Drive Thru",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 30
+        },
+        "endTime": {
+         "formattedHour": "1:15 AM",
+         "hour": 1,
+         "minute": 15
+        },
+        "startTime": {
+         "formattedHour": "10:00 AM",
+         "hour": 10,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+         "name": "Happy Hour",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "(C)",
+         "endMessageDetail": "Happier hour is from 2pm-5pm.",
+         "endMessageTitle": "Happier Hour Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+         "warningPriority": 50
+        },
+        "endTime": {
+         "formattedHour": "5:00 PM",
+         "hour": 5,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "2:00 PM",
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "previousStoreNumber": "034352",
+   "formattedDistance": "0.53 Miles"
+  },
+  {
+   "storeStatus": "openNow",
+   "pickupStoreStatusForLocation": "Activated",
+   "pickupStoreStatusForCheckout": "Activated",
+   "phoneNumber": "+13124541672",
+   "pickupShelves": false,
+   "storeNumber": "030404",
+   "timeZone": "GMT-05:00",
+   "timeZoneCity": "America/Chicago",
+   "roundUpFlag": true,
+   "qrCodeEnabled": false,
+   "cupChargeParticipation": false,
+   "previouslyOrdered": false,
+   "todayBusinessHours": {
+    "closingTime": {
+     "formattedHour": "12:30 AM",
+     "hour": 12,
+     "minute": 30
+    },
+    "openingTime": {
+     "hour": 9,
+     "minute": 0,
+     "formattedHour": "9:00 AM"
+    },
+    "weekDay": "Wednesday",
+    "dayparts": [
+     {
+      "allDay": false,
+      "closed": false,
+      "daypart": {
+       "allDay": false,
+       "closed": false,
+       "showWarning": true,
+       "afterMessageDetail": "",
+       "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+       "name": "Balance Of Day",
+       "beforeEndTimeMinutes": 5,
+       "closedMessageDetail": "",
+       "closedMessageTitle": "",
+       "endMessageDetail": "",
+       "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+       "presetMinutes": 30,
+       "startMessageDetail": "",
+       "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+       "warningPriority": 60
+      },
+      "endTime": {
+       "formattedHour": "12:30 AM",
+       "hour": 12,
+       "minute": 30
+      },
+      "startTime": {
+       "formattedHour": "9:00 AM",
+       "hour": 9,
+       "minute": 0
+      }
+     },
+     {
+      "allDay": false,
+      "closed": true,
+      "daypart": {
+       "allDay": false,
+       "closed": true,
+       "showWarning": true,
+       "afterMessageDetail": "",
+       "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+       "name": "Breakfast",
+       "beforeEndTimeMinutes": 5,
+       "closedMessageDetail": "Breakfast Is Currently Unavailable",
+       "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+       "endMessageDetail": "",
+       "endMessageTitle": "Breakfast Is Ending Soon",
+       "presetMinutes": 30,
+       "startMessageDetail": "",
+       "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+       "warningPriority": 10
+      },
+      "endTime": {
+       "formattedHour": "11:00 AM",
+       "hour": 11,
+       "minute": 0
+      },
+      "startTime": {
+       "formattedHour": "8:00 AM",
+       "hour": 8,
+       "minute": 0
+      }
+     },
+     {
+      "allDay": false,
+      "closed": false,
+      "daypart": {
+       "allDay": false,
+       "closed": false,
+       "showWarning": true,
+       "afterMessageDetail": "",
+       "afterMessageTitle": "",
+       "name": "Dine In",
+       "beforeEndTimeMinutes": 5,
+       "closedMessageDetail": "",
+       "closedMessageTitle": "",
+       "endMessageDetail": "",
+       "endMessageTitle": "",
+       "presetMinutes": 30,
+       "startMessageDetail": "",
+       "startMessageTitle": "",
+       "warningPriority": 20
+      },
+      "endTime": {
+       "formattedHour": "12:30 AM",
+       "hour": 12,
+       "minute": 30
+      },
+      "startTime": {
+       "formattedHour": "9:00 AM",
+       "hour": 9,
+       "minute": 0
+      }
+     },
+     {
+      "allDay": false,
+      "closed": false,
+      "daypart": {
+       "allDay": false,
+       "closed": false,
+       "showWarning": true,
+       "afterMessageDetail": "",
+       "afterMessageTitle": "",
+       "name": "Drive Thru",
+       "beforeEndTimeMinutes": 5,
+       "closedMessageDetail": "",
+       "closedMessageTitle": "",
+       "endMessageDetail": "",
+       "endMessageTitle": "",
+       "presetMinutes": 30,
+       "startMessageDetail": "",
+       "startMessageTitle": "",
+       "warningPriority": 30
+      },
+      "endTime": {
+       "formattedHour": "12:30 AM",
+       "hour": 12,
+       "minute": 30
+      },
+      "startTime": {
+       "formattedHour": "9:00 AM",
+       "hour": 9,
+       "minute": 0
+      }
+     },
+     {
+      "allDay": false,
+      "closed": false,
+      "daypart": {
+       "allDay": false,
+       "closed": false,
+       "showWarning": true,
+       "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+       "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+       "name": "Happy Hour",
+       "beforeEndTimeMinutes": 5,
+       "closedMessageDetail": "",
+       "closedMessageTitle": "(C)",
+       "endMessageDetail": "Happier hour is from 2pm-5pm.",
+       "endMessageTitle": "Happier Hour Is Ending Soon",
+       "presetMinutes": 30,
+       "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+       "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+       "warningPriority": 50
+      },
+      "endTime": {
+       "formattedHour": "5:00 PM",
+       "hour": 5,
+       "minute": 0
+      },
+      "startTime": {
+       "formattedHour": "2:00 PM",
+       "hour": 2,
+       "minute": 0
+      }
+     }
+    ]
+   },
+   "delivery": true,
+   "autoCheckIn": false,
+   "address": {
+    "country": {
+     "isocode": "US"
+    },
+    "line1": "500 W. Madison Ave",
+    "line2": null,
+    "postalCode": "60661",
+    "region": {
+     "isocode": "US-IL"
+    },
+    "town": "Chicago"
+   },
+   "capabilities": {
+    "breakfast": false,
+    "connectMeEnabled": true,
+    "deliveryEnabled": true,
+    "driveThru": false,
+    "driveThruPriorityPickupLane": false,
+    "isPickRestaurant": true,
+    "liveMasCafeEnabled": false,
+    "mobileEnabled": true,
+    "online": true,
+    "openLate": true,
+    "pickupShelves": false
+   },
+   "currentOnlineAvailable": true,
+   "driveThruPriorityPickupLane": false,
+   "geoPoint": {
+    "latitude": 41.8819656558,
+    "longitude": -87.6404491736
+   },
+   "geofencingEnabled": true,
+   "geofencingRadius": 3,
+   "name": "030404",
+   "openingHours": {
+    "code": "tacobell-store-hours-Sundance, Inc.",
+    "isBreakFastAvailable": false,
+    "weekDayOpeningList": [
+     {
+      "closingTime": {
+       "formattedHour": "12:30 AM",
+       "hour": 12,
+       "minute": 30
+      },
+      "openingTime": {
+       "hour": 9,
+       "minute": 0,
+       "formattedHour": "9:00 AM"
+      },
+      "weekDay": "Monday",
+      "dayparts": [
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "name": "Balance Of Day",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+         "warningPriority": 60
+        },
+        "endTime": {
+         "formattedHour": "12:30 AM",
+         "hour": 12,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+         "name": "Breakfast",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "Breakfast Is Currently Unavailable",
+         "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+         "endMessageDetail": "",
+         "endMessageTitle": "Breakfast Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+         "warningPriority": 10
+        },
+        "endTime": {
+         "formattedHour": "11:00 AM",
+         "hour": 11,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "8:00 AM",
+         "hour": 8,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Dine In",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 20
+        },
+        "endTime": {
+         "formattedHour": "12:30 AM",
+         "hour": 12,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Drive Thru",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 30
+        },
+        "endTime": {
+         "formattedHour": "12:30 AM",
+         "hour": 12,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+         "name": "Happy Hour",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "(C)",
+         "endMessageDetail": "Happier hour is from 2pm-5pm.",
+         "endMessageTitle": "Happier Hour Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+         "warningPriority": 50
+        },
+        "endTime": {
+         "formattedHour": "5:00 PM",
+         "hour": 5,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "2:00 PM",
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      ]
+     },
+     {
+      "closingTime": {
+       "formattedHour": "12:30 AM",
+       "hour": 12,
+       "minute": 30
+      },
+      "openingTime": {
+       "hour": 9,
+       "minute": 0,
+       "formattedHour": "9:00 AM"
+      },
+      "weekDay": "Tuesday",
+      "dayparts": [
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "name": "Balance Of Day",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+         "warningPriority": 60
+        },
+        "endTime": {
+         "formattedHour": "12:30 AM",
+         "hour": 12,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+         "name": "Breakfast",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "Breakfast Is Currently Unavailable",
+         "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+         "endMessageDetail": "",
+         "endMessageTitle": "Breakfast Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+         "warningPriority": 10
+        },
+        "endTime": {
+         "formattedHour": "11:00 AM",
+         "hour": 11,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "8:00 AM",
+         "hour": 8,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Dine In",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 20
+        },
+        "endTime": {
+         "formattedHour": "12:30 AM",
+         "hour": 12,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Drive Thru",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 30
+        },
+        "endTime": {
+         "formattedHour": "12:30 AM",
+         "hour": 12,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+         "name": "Happy Hour",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "(C)",
+         "endMessageDetail": "Happier hour is from 2pm-5pm.",
+         "endMessageTitle": "Happier Hour Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+         "warningPriority": 50
+        },
+        "endTime": {
+         "formattedHour": "5:00 PM",
+         "hour": 5,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "2:00 PM",
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      ]
+     },
+     {
+      "closingTime": {
+       "formattedHour": "12:30 AM",
+       "hour": 12,
+       "minute": 30
+      },
+      "openingTime": {
+       "hour": 9,
+       "minute": 0,
+       "formattedHour": "9:00 AM"
+      },
+      "weekDay": "Wednesday",
+      "dayparts": [
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "name": "Balance Of Day",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+         "warningPriority": 60
+        },
+        "endTime": {
+         "formattedHour": "12:30 AM",
+         "hour": 12,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+         "name": "Breakfast",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "Breakfast Is Currently Unavailable",
+         "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+         "endMessageDetail": "",
+         "endMessageTitle": "Breakfast Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+         "warningPriority": 10
+        },
+        "endTime": {
+         "formattedHour": "11:00 AM",
+         "hour": 11,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "8:00 AM",
+         "hour": 8,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Dine In",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 20
+        },
+        "endTime": {
+         "formattedHour": "12:30 AM",
+         "hour": 12,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Drive Thru",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 30
+        },
+        "endTime": {
+         "formattedHour": "12:30 AM",
+         "hour": 12,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+         "name": "Happy Hour",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "(C)",
+         "endMessageDetail": "Happier hour is from 2pm-5pm.",
+         "endMessageTitle": "Happier Hour Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+         "warningPriority": 50
+        },
+        "endTime": {
+         "formattedHour": "5:00 PM",
+         "hour": 5,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "2:00 PM",
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      ]
+     },
+     {
+      "closingTime": {
+       "formattedHour": "12:30 AM",
+       "hour": 12,
+       "minute": 30
+      },
+      "openingTime": {
+       "hour": 9,
+       "minute": 0,
+       "formattedHour": "9:00 AM"
+      },
+      "weekDay": "Thursday",
+      "dayparts": [
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "name": "Balance Of Day",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+         "warningPriority": 60
+        },
+        "endTime": {
+         "formattedHour": "12:30 AM",
+         "hour": 12,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+         "name": "Breakfast",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "Breakfast Is Currently Unavailable",
+         "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+         "endMessageDetail": "",
+         "endMessageTitle": "Breakfast Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+         "warningPriority": 10
+        },
+        "endTime": {
+         "formattedHour": "11:00 AM",
+         "hour": 11,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "8:00 AM",
+         "hour": 8,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Dine In",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 20
+        },
+        "endTime": {
+         "formattedHour": "12:30 AM",
+         "hour": 12,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Drive Thru",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 30
+        },
+        "endTime": {
+         "formattedHour": "12:30 AM",
+         "hour": 12,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+         "name": "Happy Hour",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "(C)",
+         "endMessageDetail": "Happier hour is from 2pm-5pm.",
+         "endMessageTitle": "Happier Hour Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+         "warningPriority": 50
+        },
+        "endTime": {
+         "formattedHour": "5:00 PM",
+         "hour": 5,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "2:00 PM",
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      ]
+     },
+     {
+      "closingTime": {
+       "formattedHour": "12:30 AM",
+       "hour": 12,
+       "minute": 30
+      },
+      "openingTime": {
+       "hour": 9,
+       "minute": 0,
+       "formattedHour": "9:00 AM"
+      },
+      "weekDay": "Friday",
+      "dayparts": [
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "name": "Balance Of Day",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+         "warningPriority": 60
+        },
+        "endTime": {
+         "formattedHour": "12:30 AM",
+         "hour": 12,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+         "name": "Breakfast",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "Breakfast Is Currently Unavailable",
+         "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+         "endMessageDetail": "",
+         "endMessageTitle": "Breakfast Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+         "warningPriority": 10
+        },
+        "endTime": {
+         "formattedHour": "11:00 AM",
+         "hour": 11,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "8:00 AM",
+         "hour": 8,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Dine In",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 20
+        },
+        "endTime": {
+         "formattedHour": "12:30 AM",
+         "hour": 12,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Drive Thru",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 30
+        },
+        "endTime": {
+         "formattedHour": "12:30 AM",
+         "hour": 12,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+         "name": "Happy Hour",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "(C)",
+         "endMessageDetail": "Happier hour is from 2pm-5pm.",
+         "endMessageTitle": "Happier Hour Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+         "warningPriority": 50
+        },
+        "endTime": {
+         "formattedHour": "5:00 PM",
+         "hour": 5,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "2:00 PM",
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      ]
+     },
+     {
+      "closingTime": {
+       "formattedHour": "12:30 AM",
+       "hour": 12,
+       "minute": 30
+      },
+      "openingTime": {
+       "hour": 9,
+       "minute": 0,
+       "formattedHour": "9:00 AM"
+      },
+      "weekDay": "Saturday",
+      "dayparts": [
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "name": "Balance Of Day",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+         "warningPriority": 60
+        },
+        "endTime": {
+         "formattedHour": "12:30 AM",
+         "hour": 12,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+         "name": "Breakfast",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "Breakfast Is Currently Unavailable",
+         "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+         "endMessageDetail": "",
+         "endMessageTitle": "Breakfast Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+         "warningPriority": 10
+        },
+        "endTime": {
+         "formattedHour": "11:00 AM",
+         "hour": 11,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "8:00 AM",
+         "hour": 8,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Dine In",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 20
+        },
+        "endTime": {
+         "formattedHour": "12:30 AM",
+         "hour": 12,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Drive Thru",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 30
+        },
+        "endTime": {
+         "formattedHour": "12:30 AM",
+         "hour": 12,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+         "name": "Happy Hour",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "(C)",
+         "endMessageDetail": "Happier hour is from 2pm-5pm.",
+         "endMessageTitle": "Happier Hour Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+         "warningPriority": 50
+        },
+        "endTime": {
+         "formattedHour": "5:00 PM",
+         "hour": 5,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "2:00 PM",
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      ]
+     },
+     {
+      "closingTime": {
+       "formattedHour": "12:30 AM",
+       "hour": 12,
+       "minute": 30
+      },
+      "openingTime": {
+       "hour": 9,
+       "minute": 0,
+       "formattedHour": "9:00 AM"
+      },
+      "weekDay": "Sunday",
+      "dayparts": [
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "name": "Balance Of Day",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "Our full menu is available from <DayPartStart>-<DayPartEnd>",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Most items are  available from <DayPartStart>-<DayPartEnd>",
+         "warningPriority": 60
+        },
+        "endTime": {
+         "formattedHour": "12:30 AM",
+         "hour": 12,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": true,
+        "daypart": {
+         "allDay": false,
+         "closed": true,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "Breakfast Is Currently Unavailable (A)",
+         "name": "Breakfast",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "Breakfast Is Currently Unavailable",
+         "closedMessageTitle": "Breakfast Is Currently Unavailable (C)",
+         "endMessageDetail": "",
+         "endMessageTitle": "Breakfast Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "Breakfast Is  Currently Unavailable (S)",
+         "warningPriority": 10
+        },
+        "endTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Dine In",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 20
+        },
+        "endTime": {
+         "formattedHour": "12:30 AM",
+         "hour": 12,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "",
+         "afterMessageTitle": "",
+         "name": "Drive Thru",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "",
+         "endMessageDetail": "",
+         "endMessageTitle": "",
+         "presetMinutes": 30,
+         "startMessageDetail": "",
+         "startMessageTitle": "",
+         "warningPriority": 30
+        },
+        "endTime": {
+         "formattedHour": "12:30 AM",
+         "hour": 12,
+         "minute": 30
+        },
+        "startTime": {
+         "formattedHour": "9:00 AM",
+         "hour": 9,
+         "minute": 0
+        }
+       },
+       {
+        "allDay": false,
+        "closed": false,
+        "daypart": {
+         "allDay": false,
+         "closed": false,
+         "showWarning": true,
+         "afterMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "afterMessageTitle": "Happier Hour Is Currently Unavailable",
+         "name": "Happy Hour",
+         "beforeEndTimeMinutes": 5,
+         "closedMessageDetail": "",
+         "closedMessageTitle": "(C)",
+         "endMessageDetail": "Happier hour is from 2pm-5pm.",
+         "endMessageTitle": "Happier Hour Is Ending Soon",
+         "presetMinutes": 30,
+         "startMessageDetail": "Happier Hour is from 2pm-5pm.",
+         "startMessageTitle": "Happier Hour Is  Currently Unavailable",
+         "warningPriority": 50
+        },
+        "endTime": {
+         "formattedHour": "5:00 PM",
+         "hour": 5,
+         "minute": 0
+        },
+        "startTime": {
+         "formattedHour": "2:00 PM",
+         "hour": 2,
+         "minute": 0
+        }
+       }
+      ]
+     }
+    ]
+   },
+   "previousStoreNumber": "004171",
+   "formattedDistance": "0.61 Miles"
+  }
+ ]
+}

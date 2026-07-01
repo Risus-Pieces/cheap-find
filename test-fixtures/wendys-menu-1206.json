@@ -1,0 +1,134 @@
+{
+ "note": "trimmed to Dave's Single salesItem entries",
+ "salesItems": [
+  {
+   "salesItemId": 40000,
+   "POSItemId": 10200,
+   "categoryName": "Cheeseburgers",
+   "price": 5.79,
+   "modifierGroups": [
+    61361,
+    61364,
+    61363,
+    61362,
+    61359,
+    62126
+   ],
+   "defaultOptions": [
+    {
+     "modifierGroupId": 61359,
+     "modifierId": 70197,
+     "defaultQuantity": 1,
+     "defaultReason": 1,
+     "modifierAction": 0
+    },
+    {
+     "modifierGroupId": 61362,
+     "modifierId": 71539,
+     "defaultQuantity": 1,
+     "defaultReason": 1,
+     "modifierAction": 0
+    },
+    {
+     "modifierGroupId": 61361,
+     "modifierId": 70214,
+     "defaultQuantity": 1,
+     "defaultReason": 1,
+     "modifierAction": 0
+    },
+    {
+     "modifierGroupId": 61361,
+     "modifierId": 70215,
+     "defaultQuantity": 1,
+     "defaultReason": 1,
+     "modifierAction": 0
+    },
+    {
+     "modifierGroupId": 61361,
+     "modifierId": 71570,
+     "defaultQuantity": 1,
+     "defaultReason": 1,
+     "modifierAction": 0
+    },
+    {
+     "modifierGroupId": 61363,
+     "modifierId": 70222,
+     "defaultQuantity": 1,
+     "defaultReason": 1,
+     "modifierAction": 0
+    },
+    {
+     "modifierGroupId": 61364,
+     "modifierId": 71567,
+     "defaultQuantity": 1,
+     "defaultReason": 1,
+     "modifierAction": 0
+    },
+    {
+     "modifierGroupId": 61364,
+     "modifierId": 71569,
+     "defaultQuantity": 1,
+     "defaultReason": 1,
+     "modifierAction": 0
+    },
+    {
+     "modifierGroupId": 61364,
+     "modifierId": 71571,
+     "defaultQuantity": 1,
+     "defaultReason": 1,
+     "modifierAction": 0
+    },
+    {
+     "modifierGroupId": 61361,
+     "modifierId": 70216,
+     "defaultQuantity": 1,
+     "defaultReason": 1,
+     "modifierAction": 0
+    }
+   ],
+   "shortDescription": "Single",
+   "isLTO": false,
+   "productId": "3835",
+   "nutrition": {
+    "calorieRange": "560 Cal",
+    "servingSize": 0.0,
+    "calories": 560.0,
+    "caloriesFromFat": 300.0,
+    "totalFat": 34.0,
+    "saturated": 14.0,
+    "transFattyAcids": 1.5,
+    "cholesterol": 0.0,
+    "sodium": 1170.0,
+    "dietaryFiber": 2.0,
+    "sugars": 9.0,
+    "protein": 31.0,
+    "vitaminA": 0.0,
+    "vitaminC": 0.0,
+    "vitaminD": 0.0,
+    "calcium": 15.0,
+    "iron": 25.0,
+    "monounsaturated": 0.0,
+    "polyunsaturated": 0.0,
+    "potassium": 10.0,
+    "hasEgg": true,
+    "hasFish": false,
+    "hasMilk": true,
+    "hasSoy": true,
+    "hasTreenut": false,
+    "hasPeanut": false,
+    "hasWheat": true,
+    "hasShellfish": false,
+    "hasMustard": false,
+    "hasSesame": false,
+    "hasCrustacean": false
+   },
+   "alaCarteMenuItemId": 30000,
+   "calorieRange": "560 Cal",
+   "isFreestyle": false,
+   "isAvailable": true,
+   "name": "Dave's Single\u00ae Mustard MRI",
+   "description": "A quarter-pound* of fresh, never-frozen beef, American cheese, crisp lettuce, tomato, pickle, ketchup, mustard, mayo, and onion on a potato bun. The single greatest single ever created by man\u2014or at least by a man named, \u201cDave.\u201d",
+   "displayName": "Dave's Single\u00ae"
+  }
+ ]
+}
