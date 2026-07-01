@@ -53,6 +53,8 @@ export default function Home() {
   const searchZoomRef = useRef<number>(12);
   const mapBoundsRef = useRef<{ north: number; south: number; east: number; west: number } | null>(null);
   const hasLoadedOnce = useRef(false);
+  // Bumped on every new search; stale in-flight price fetches bail when it changes
+  const fetchGenerationRef = useRef(0);
 
   // Stable refs to avoid stale closures
   const pricesRef = useRef<Record<string, PriceResult>>({});
@@ -86,13 +88,17 @@ export default function Home() {
   const fetchPrice = useCallback(async (
     storeId: string,
     currentChain: string,
+    generation: number,
     removeIfNotLive = false
   ) => {
     const key = storeId;
     try {
       const res = await fetch(`/api/${currentChain}/price/${storeId}`);
+      // Bail before any state write if a newer search superseded this fetch
+      if (generation !== fetchGenerationRef.current) return;
       if (!res.ok) return;
       const data: PriceResult = await res.json();
+      if (generation !== fetchGenerationRef.current) return;
       if (!data.isLive) {
         if (removeIfNotLive) {
           setStores((prev) => prev.filter((s) => s.id !== storeId));
@@ -103,11 +109,13 @@ export default function Home() {
       }
       setPrices((prev) => ({ ...prev, [key]: data }));
     } finally {
-      setLoadingPriceKeys((prev) => {
-        const next = new Set(prev);
-        next.delete(key);
-        return next;
-      });
+      if (generation === fetchGenerationRef.current) {
+        setLoadingPriceKeys((prev) => {
+          const next = new Set(prev);
+          next.delete(key);
+          return next;
+        });
+      }
     }
   }, []);
 
@@ -117,6 +125,7 @@ export default function Home() {
       refLat: number,
       refLng: number,
       currentChain: string,
+      generation: number,
       removeIfNotLive = false
     ) => {
       const sorted = [...storeList].sort(
@@ -128,6 +137,7 @@ export default function Home() {
       // Skip already-cached
       const toFetch = sorted.filter((s) => !pricesRef.current[s.id]);
 
+      if (generation !== fetchGenerationRef.current) return;
       setLoadingPriceKeys((prev) => {
         const next = new Set(prev);
         toFetch.forEach((s) => next.add(s.id));
@@ -137,9 +147,9 @@ export default function Home() {
       const first = toFetch.slice(0, 10);
       const rest = toFetch.slice(10);
 
-      await Promise.allSettled(first.map((s) => fetchPrice(s.id, currentChain, removeIfNotLive)));
-      if (rest.length > 0) {
-        await Promise.allSettled(rest.map((s) => fetchPrice(s.id, currentChain, removeIfNotLive)));
+      await Promise.allSettled(first.map((s) => fetchPrice(s.id, currentChain, generation, removeIfNotLive)));
+      if (rest.length > 0 && generation === fetchGenerationRef.current) {
+        await Promise.allSettled(rest.map((s) => fetchPrice(s.id, currentChain, generation, removeIfNotLive)));
       }
     },
     [fetchPrice]
@@ -148,11 +158,14 @@ export default function Home() {
   // ── Store search ──────────────────────────────────────────────────────────
   const searchStores = useCallback(
     async (location: Location, currentChain: string, skipFlyTo = false) => {
+      fetchGenerationRef.current += 1;
+      const generation = fetchGenerationRef.current;
       setAppStatus("loading");
       setShowSearchAreaButton(false);
       setSelectedId(null);
       setPrices({});
       pricesRef.current = {};
+      setLoadingPriceKeys(new Set());
 
       try {
         const res = await fetch(`/api/${currentChain}/stores?lat=${location.lat}&lng=${location.lng}`);
@@ -183,7 +196,7 @@ export default function Home() {
           searchZoomRef.current = mapZoomRef.current;
         }
 
-        fetchPricesProgressively(storeList, location.lat, location.lng, currentChain, true);
+        fetchPricesProgressively(storeList, location.lat, location.lng, currentChain, generation, true);
       } catch (err) {
         console.error(err);
         setErrorMsg("Failed to fetch locations. Please try again.");
@@ -196,11 +209,14 @@ export default function Home() {
   // ── Area search ───────────────────────────────────────────────────────────
   const searchArea = useCallback(async () => {
     const currentChain = chainRef.current;
+    fetchGenerationRef.current += 1;
+    const generation = fetchGenerationRef.current;
     setAppStatus("loading");
     setShowSearchAreaButton(false);
     setSelectedId(null);
     setPrices({});
     pricesRef.current = {};
+    setLoadingPriceKeys(new Set());
 
     let points = mapRef.current?.getVisiblePlacePoints() ?? [];
 
@@ -270,7 +286,7 @@ export default function Home() {
       hasLoadedOnce.current = true;
       searchZoomRef.current = mapZoomRef.current;
 
-      fetchPricesProgressively(allStores, centerLat, centerLng, currentChain, true);
+      fetchPricesProgressively(allStores, centerLat, centerLng, currentChain, generation, true);
     } catch (err) {
       console.error(err);
       setErrorMsg("Failed to fetch locations. Please try again.");

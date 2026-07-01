@@ -183,7 +183,7 @@ const RestaurantMap = forwardRef<MapHandle, MapProps>(function RestaurantMap(
 
       const priceLabel = price
         ? `<span style="color:#16a34a;font-weight:700">$${price.price.toFixed(2)}</span>${
-            isCheapest ? ' <span style="color:#b45309">⭐ Cheapest</span>' : ""
+            isCheapest ? ' <span style="color:#b45309">Cheapest</span>' : ""
           }`
         : `<span style="color:#9ca3af">Loading…</span>`;
 

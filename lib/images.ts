@@ -18,7 +18,7 @@ export function getStoreImage(storeId: string): string {
   // Hash the string chars to get a stable index
   let hash = 0;
   for (let i = 0; i < storeId.length; i++) {
-    hash = (hash + storeId.charCodeAt(i)) & 0xffff;
+    hash = (Math.imul(31, hash) + storeId.charCodeAt(i)) | 0;
   }
-  return FOOD_IMAGES[ROTATION_KEYS[hash % ROTATION_KEYS.length]];
+  return FOOD_IMAGES[ROTATION_KEYS[Math.abs(hash) % ROTATION_KEYS.length]];
 }
