@@ -2,8 +2,20 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { StoreLocation } from "@/app/api/stores/route";
-import { PriceData } from "@/app/api/price/[storeId]/route";
+import type { PriceResult } from "@/lib/chains/types";
+
+// Legacy shape used by this component; Task 9 will replace with canonical Store type
+export interface StoreLocation {
+  id: number;
+  name: string;
+  address: string;
+  lat: number;
+  lng: number;
+  image: string;
+}
+
+// Alias until Task 9 migrates to PriceResult
+export type PriceData = PriceResult & { deliveryPrice: number };
 import { FOOD_IMAGES } from "@/lib/images";
 
 interface LocationCardProps {

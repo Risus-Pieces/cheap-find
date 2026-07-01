@@ -3,8 +3,7 @@
 import { useEffect, useRef, forwardRef, useImperativeHandle } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { StoreLocation } from "@/app/api/stores/route";
-import { PriceData } from "@/app/api/price/[storeId]/route";
+import type { StoreLocation, PriceData } from "@/app/components/LocationCard";
 
 const MAP_STYLE = "https://tiles.openfreemap.org/styles/liberty";
 
