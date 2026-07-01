@@ -27,4 +27,27 @@ describe("tacobell parsers", () => {
     const r = parsePrice({ nothing: true });
     expect(r.isLive).toBe(false);
   });
+
+  it("walks a nested real-API-shaped menu, skipping zero-price decoys", () => {
+    const menu = {
+      menuProductCategories: [
+        {
+          name: "Cravings Value Menu",
+          products: [
+            { code: "99999", price: { value: 1.99 } },
+            { code: "22362", price: { value: 0 } }, // zero-price decoy must be skipped
+          ],
+        },
+        {
+          name: "Specialties",
+          products: [
+            { code: "11111", price: { value: 5.49 } },
+            { code: "22362", price: { value: 8.99 } },
+          ],
+        },
+      ],
+    };
+    const r = parsePrice(menu);
+    expect(r).toEqual({ price: 8.99, isLive: true });
+  });
 });
