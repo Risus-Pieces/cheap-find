@@ -16,7 +16,7 @@ export async function GET(request: Request) {
     const res = await fetch(url, {
       headers: {
         // Nominatim requires a descriptive User-Agent
-        "User-Agent": "Cheapotle/1.0 (github.com/akulanikhil/cheapotle)",
+        "User-Agent": "FastFind/1.0 (fast food price comparison app)",
         Accept: "application/json",
       },
       signal: AbortSignal.timeout(6_000),

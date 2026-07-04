@@ -2,6 +2,7 @@ import type { Store } from "./types";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function parseStores(json: any): Store[] {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const raw: any[] = json?.data?.restaurants?.nodes ?? [];
   return raw
     .map((s) => {

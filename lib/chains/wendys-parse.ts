@@ -4,6 +4,7 @@ const FALLBACK = 6.29;
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function parseStores(json: any): Store[] {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const raw: any[] = json?.data ?? [];
   return raw
     .map((s) => {

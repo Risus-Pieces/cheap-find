@@ -18,8 +18,8 @@ const barlowCondensed = Barlow_Condensed({
 });
 
 export const metadata: Metadata = {
-  title: "Cheapotle — Compare Burrito Bowl Prices Near You",
-  description: "Compare menu prices across restaurant locations on a live map. Find the best deal near you. Independent price comparison tool.",
+  title: "FastFind — Compare Fast Food Prices Near You",
+  description: "Find the cheapest Chipotle, Taco Bell, Wendy's, and Burger King near you. Live per-location prices on an interactive map.",
 };
 
 export default function RootLayout({
