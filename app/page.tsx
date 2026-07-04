@@ -169,6 +169,7 @@ export default function Home() {
 
       try {
         const res = await fetch(`/api/${currentChain}/stores?lat=${location.lat}&lng=${location.lng}`);
+        if (generation !== fetchGenerationRef.current) return;
         if (res.status === 404) {
           setErrorMsg("No locations found in this area.");
           setAppStatus("error");
@@ -177,6 +178,7 @@ export default function Home() {
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
         const data = await res.json();
+        if (generation !== fetchGenerationRef.current) return;
         // Attach images client-side
         const storeList: StoreWithImage[] = (data.stores as Store[]).map((s) => ({
           ...s,
@@ -199,6 +201,7 @@ export default function Home() {
         fetchPricesProgressively(storeList, location.lat, location.lng, currentChain, generation, true);
       } catch (err) {
         console.error(err);
+        if (generation !== fetchGenerationRef.current) return;
         setErrorMsg("Failed to fetch locations. Please try again.");
         setAppStatus("error");
       }
@@ -255,6 +258,7 @@ export default function Home() {
           fetch(`/api/${currentChain}/stores?lat=${p.lat}&lng=${p.lng}`).then((r) => r.json())
         )
       );
+      if (generation !== fetchGenerationRef.current) return;
 
       const seenIds = new Set<string>();
       const allStores: StoreWithImage[] = [];
@@ -289,6 +293,7 @@ export default function Home() {
       fetchPricesProgressively(allStores, centerLat, centerLng, currentChain, generation, true);
     } catch (err) {
       console.error(err);
+      if (generation !== fetchGenerationRef.current) return;
       setErrorMsg("Failed to fetch locations. Please try again.");
       setAppStatus("error");
     }
