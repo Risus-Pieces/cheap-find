@@ -1,0 +1,40 @@
+{
+  "currentCityMergedData": [
+    {
+      "id": 95091,
+      "name": "North Riverside",
+      "latitude": 41.850049,
+      "longitude": -87.8048,
+      "streetaddress": "7225 W Cermak Rd.",
+      "city": "North Riverside",
+      "state": "IL",
+      "zip": "60546",
+      "slug": "north-riverside",
+      "restaurantId": "001.005.1734"
+    },
+    {
+      "id": 230653,
+      "name": "Melrose Park",
+      "latitude": 41.908592,
+      "longitude": -87.846788,
+      "streetaddress": "915 W North Ave",
+      "city": "Melrose Park",
+      "state": "IL",
+      "zip": "60160",
+      "slug": "melrose-park",
+      "restaurantId": "001.005.1661"
+    },
+    {
+      "id": 95421,
+      "name": "Chicago Ridge",
+      "latitude": 41.715556,
+      "longitude": -87.7804,
+      "streetaddress": "9720 Ridgeland Ave",
+      "city": "Chicago Ridge",
+      "state": "IL",
+      "zip": "60415",
+      "slug": "chicago-ridge",
+      "restaurantId": "001.005.1787"
+    }
+  ]
+}
