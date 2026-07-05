@@ -1,4 +1,12 @@
-export type ChainId = "chipotle" | "tacobell" | "wendys";
+export type ChainId =
+  | "chipotle"
+  | "tacobell"
+  | "wendys"
+  | "dominos"
+  | "marcos"
+  | "chilis"
+  | "whataburger"
+  | "popeyes";
 
 export interface Store {
   id: string;
