@@ -6,7 +6,7 @@ const UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36";
 
 export const whataburger: ChainProvider = {
-  id: "whataburger" as ChainProvider["id"],
+  id: "whataburger",
   name: "Whataburger",
   benchmarkItem: "Whataburger",
   accentColor: "#FF5000",
@@ -19,6 +19,9 @@ export const whataburger: ChainProvider = {
       signal: AbortSignal.timeout(10_000),
       cache: "no-store",
     });
+    // 404 = no Whataburger locations near these coords (chain is regional).
+    // Treat as "no stores" so the API route returns a clean empty result.
+    if (res.status === 404) return [];
     if (!res.ok) throw new Error(`Whataburger stores HTTP ${res.status}`);
     return parseStores(await res.json());
   },
