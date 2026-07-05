@@ -1,4 +1,4 @@
-export type ChainId = "chipotle" | "tacobell" | "wendys" | "burgerking";
+export type ChainId = "chipotle" | "tacobell" | "wendys";
 
 export interface Store {
   id: string;

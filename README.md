@@ -4,7 +4,7 @@ Pick a fast food chain, see every nearby location ranked cheapest to priciest fo
 
 ## How it works
 
-1. Choose a chain from the chip picker (Chipotle, Taco Bell, Wendy's, Burger King).
+1. Choose a chain from the chip picker (Chipotle, Taco Bell, Wendy's).
 2. Search an address or ZIP, or tap **Near me** to use GPS.
 3. The app fetches nearby locations, then progressively loads prices for each store directly from the chain's public ordering backend.
 4. Locations appear on a map and in a scrollable list, sorted by price (or distance — toggle in the sort bar). The cheapest store gets a badge. Tap any card or marker to zoom in.
@@ -19,9 +19,8 @@ Prices are cached in memory for 5 minutes server-side, so rapid re-searches don'
 | Chipotle | Chicken Bowl | Live — per-store online ordering price |
 | Taco Bell | Crunchwrap Supreme | Live — per-store online ordering price |
 | Wendy's | Dave's Single | Live — per-store online ordering price |
-| Burger King | Whopper | Estimated — national average (shown with amber badge) |
 
-**Live** means prices are fetched server-side from the chain's own public ordering API on demand. Per-store BK pricing is deferred because RBI's backend requires a fragile CMS PLU join; BK store locations are live.
+**Live** means prices are fetched server-side from the chain's own public ordering API on demand.
 
 **Estimated** means a hardcoded national average is displayed. The app degrades gracefully to estimated prices for any chain if its upstream API is unavailable.
 
@@ -45,7 +44,7 @@ Open [http://localhost:3000](http://localhost:3000).
 | `npm run dev` | Next.js dev server with hot reload |
 | `npm run build` | Production build |
 | `npm run start` | Serve the production build |
-| `npm test` | Run the full Vitest suite (19 tests, no network) |
+| `npm test` | Run the full Vitest suite (17 tests, no network) |
 | `npm run smoke` | Hit each chain's live API and print one result per chain |
 
 ## Architecture
@@ -71,8 +70,6 @@ lib/chains/
   tacobell.ts
   wendys-parse.ts
   wendys.ts
-  burgerking-parse.ts
-  burgerking.ts
   __tests__/                Vitest unit tests (real API fixtures, no network)
 
 test-fixtures/              Recorded API responses used by the unit tests
@@ -95,7 +92,7 @@ The API routes are chain-agnostic: they look up the provider from the registry a
 
 ## Caveats
 
-- **Unofficial integrations.** This app is not affiliated with, endorsed by, or sponsored by Chipotle, Taco Bell, Wendy's, Burger King, or their parent companies. It uses publicly accessible ordering endpoints — these may change or begin blocking requests at any time, in which case the app falls back to estimated prices.
+- **Unofficial integrations.** This app is not affiliated with, endorsed by, or sponsored by Chipotle, Taco Bell, Wendy's, or their parent companies. It uses publicly accessible ordering endpoints — these may change or begin blocking requests at any time, in which case the app falls back to estimated prices.
 - **Online prices only.** Prices shown are online ordering / pickup prices. Walk-in menu prices may differ.
 - **No guarantees.** Data is best-effort and may lag, be wrong, or be unavailable. Do not rely on it for anything consequential.
 

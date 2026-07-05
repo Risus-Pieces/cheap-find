@@ -2,9 +2,9 @@ import { describe, it, expect } from "vitest";
 import { getChain, listChains } from "../registry";
 
 describe("chain registry", () => {
-  it("lists all four MVP chains", () => {
+  it("lists all three MVP chains", () => {
     expect(listChains().map((c) => c.id).sort()).toEqual(
-      ["burgerking", "chipotle", "tacobell", "wendys"]
+      ["chipotle", "tacobell", "wendys"]
     );
   });
 

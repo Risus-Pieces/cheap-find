@@ -19,7 +19,7 @@ const barlowCondensed = Barlow_Condensed({
 
 export const metadata: Metadata = {
   title: "FastFind — Compare Fast Food Prices Near You",
-  description: "Find the cheapest Chipotle, Taco Bell, Wendy's, and Burger King near you. Live per-location prices on an interactive map.",
+  description: "Find the cheapest Chipotle, Taco Bell, and Wendy's near you. Live per-location prices on an interactive map.",
 };
 
 export default function RootLayout({
