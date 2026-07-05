@@ -1,0 +1,34 @@
+{
+  "locations": [
+    {
+      "id": 525,
+      "address1": "3636 N Main St",
+      "city": "Houston",
+      "state": "TX",
+      "zip": "77009",
+      "locationName": "Whataburger #533",
+      "longitude": -95.37318576871,
+      "latitude": 29.7913223827
+    },
+    {
+      "id": 576,
+      "address1": "3712 S Shepherd Dr",
+      "city": "Houston",
+      "state": "TX",
+      "zip": "77098",
+      "locationName": "Whataburger #271",
+      "longitude": -95.41091882073,
+      "latitude": 29.73286285696
+    },
+    {
+      "id": 523,
+      "address1": "3624 Old Spanish Trl",
+      "city": "Houston",
+      "state": "TX",
+      "zip": "77021",
+      "locationName": "Whataburger #267",
+      "longitude": -95.36278792106,
+      "latitude": 29.7016458851
+    }
+  ]
+}
