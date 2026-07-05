@@ -1,0 +1,30 @@
+{
+  "data": {
+    "storeMenu": [
+      {
+        "id": "item_101929",
+        "price": {
+          "default": 629
+        }
+      },
+      {
+        "id": "item_40835",
+        "price": {
+          "default": 0
+        }
+      },
+      {
+        "id": "item_40834",
+        "price": {
+          "default": 0
+        }
+      },
+      {
+        "id": "4KPdxyeKLfFDx0f2UMovtN",
+        "price": {
+          "default": 0
+        }
+      }
+    ]
+  }
+}
