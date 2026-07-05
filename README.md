@@ -4,7 +4,7 @@ Pick a fast food chain, see every nearby location ranked cheapest to priciest fo
 
 ## How it works
 
-1. Choose a chain from the chip picker (Chipotle, Taco Bell, Wendy's).
+1. Choose a chain from the chip picker (Chipotle, Taco Bell, Wendy's, Domino's, Marco's Pizza, Chili's, Whataburger, Popeyes).
 2. Search an address or ZIP, or tap **Near me** to use GPS.
 3. The app fetches nearby locations, then progressively loads prices for each store directly from the chain's public ordering backend.
 4. Locations appear on a map and in a scrollable list, sorted by price (or distance — toggle in the sort bar). The cheapest store gets a badge. Tap any card or marker to zoom in.
@@ -19,6 +19,11 @@ Prices are cached in memory for 5 minutes server-side, so rapid re-searches don'
 | Chipotle | Chicken Bowl | Live — per-store online ordering price |
 | Taco Bell | Crunchwrap Supreme | Live — per-store online ordering price |
 | Wendy's | Dave's Single | Live — per-store online ordering price |
+| Domino's | Medium Hand Tossed Pizza | Live — per-store online ordering price |
+| Marco's Pizza | Medium Pepperoni Magnifico | Live — per-store online ordering price |
+| Chili's | Oldtimer with Cheese | Live — per-store online ordering price |
+| Whataburger | Whataburger | Live — per-store online ordering price (regional; mostly TX/South) |
+| Popeyes | Classic Chicken Sandwich | Live — per-store online ordering price |
 
 **Live** means prices are fetched server-side from the chain's own public ordering API on demand.
 
@@ -44,7 +49,7 @@ Open [http://localhost:3000](http://localhost:3000).
 | `npm run dev` | Next.js dev server with hot reload |
 | `npm run build` | Production build |
 | `npm run start` | Serve the production build |
-| `npm test` | Run the full Vitest suite (17 tests, no network) |
+| `npm test` | Run the full Vitest suite (49 tests, no network) |
 | `npm run smoke` | Hit each chain's live API and print one result per chain |
 
 ## Architecture
@@ -66,10 +71,13 @@ lib/chains/
   registry.ts               Maps chain IDs to provider instances
   chipotle-parse.ts         Pure parsing functions (tested against fixtures)
   chipotle.ts               ChainProvider implementation
-  tacobell-parse.ts
-  tacobell.ts
-  wendys-parse.ts
-  wendys.ts
+  tacobell-parse.ts / tacobell.ts
+  wendys-parse.ts / wendys.ts
+  dominos-parse.ts / dominos.ts
+  marcos-parse.ts / marcos.ts
+  chilis-parse.ts / chilis.ts
+  whataburger-parse.ts / whataburger.ts
+  popeyes-parse.ts / popeyes.ts
   __tests__/                Vitest unit tests (real API fixtures, no network)
 
 test-fixtures/              Recorded API responses used by the unit tests
@@ -92,7 +100,7 @@ The API routes are chain-agnostic: they look up the provider from the registry a
 
 ## Caveats
 
-- **Unofficial integrations.** This app is not affiliated with, endorsed by, or sponsored by Chipotle, Taco Bell, Wendy's, or their parent companies. It uses publicly accessible ordering endpoints — these may change or begin blocking requests at any time, in which case the app falls back to estimated prices.
+- **Unofficial integrations.** This app is not affiliated with, endorsed by, or sponsored by any of the featured chains or their parent companies. It uses publicly accessible ordering endpoints — these may change or begin blocking requests at any time, in which case the app falls back to estimated prices.
 - **Online prices only.** Prices shown are online ordering / pickup prices. Walk-in menu prices may differ.
 - **No guarantees.** Data is best-effort and may lag, be wrong, or be unavailable. Do not rely on it for anything consequential.
 
