@@ -1,0 +1,36 @@
+{
+  "data": {
+    "locations": [
+      {
+        "id": "a04bb466-059c-4367-9969-f2c0e7ad52c1",
+        "name": "Wingstop Chicago Harrison",
+        "legacyStoreNumber": 9125,
+        "streetAddress": "12 E Harrison St",
+        "locality": "Chicago",
+        "region": "IL",
+        "latitude": 41.8743097,
+        "longitude": -87.6264522
+      },
+      {
+        "id": "59ca8ac5-6128-4435-b7ac-c3b7071d5d5a",
+        "name": "Wingstop Chicago W. Roosevelt Rd.",
+        "legacyStoreNumber": 31210,
+        "streetAddress": "500 W. Roosevelt Rd, Ste 3",
+        "locality": "Chicago",
+        "region": "IL",
+        "latitude": 41.8677217,
+        "longitude": -87.6397081
+      },
+      {
+        "id": "37f0964d-de0d-4f5e-b2b6-efff34c74ab2",
+        "name": "Wingstop Chicago Division",
+        "legacyStoreNumber": 9053,
+        "streetAddress": "47 W Division St",
+        "locality": "Chicago",
+        "region": "IL",
+        "latitude": 41.9037698,
+        "longitude": -87.6304046
+      }
+    ]
+  }
+}
