@@ -1,48 +1,29 @@
 import type { ChainProvider, Store } from "./types";
 import { parseStoresHtml, parsePrice } from "./chilis-parse";
 import { haversineDistance } from "../haversine";
+import { reverseGeocode } from "../geo/reverse";
 
 const UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36";
 
+const toSlug = (s: string) =>
+  s
+    .toLowerCase()
+    .replace(/\bcounty\b/g, "") // "Cook County" → "cook"
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+
 /**
- * Reverse-geocode lat/lng via Nominatim to get state + city slugs,
- * then fetch Chili's SSR locations page which embeds the 20 nearest stores
- * in Next.js React Server Components flight data.
+ * Fetch Chili's SSR locations page for a state/city slug. The page embeds the
+ * ~20 nearest stores in Next.js React Server Components flight data.
+ * Returns [] on any non-200 (e.g. no Chili's page for that city).
  */
-async function reverseGeocode(
-  lat: number,
-  lng: number
-): Promise<{ stateSlug: string; citySlug: string }> {
-  const url =
-    `https://nominatim.openstreetmap.org/reverse` +
-    `?format=json&lat=${lat}&lon=${lng}`;
-  const res = await fetch(url, {
-    headers: {
-      "User-Agent": "FastFind/1.0 (fast food price comparison app)",
-      Accept: "application/json",
-    },
-    signal: AbortSignal.timeout(8_000),
-    cache: "no-store",
-  });
-  if (!res.ok) throw new Error(`Nominatim reverse HTTP ${res.status}`);
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const data: any = await res.json();
-  const addr = data?.address ?? {};
-  // Prefer city, then town, then municipality, then village
-  const city: string =
-    addr.city ?? addr.town ?? addr.municipality ?? addr.village ?? "";
-  const state: string = addr.state ?? "";
-  if (!city || !state) throw new Error("Nominatim: no city/state in response");
-
-  const toSlug = (s: string) => s.toLowerCase().replace(/\s+/g, "-");
-  return { stateSlug: toSlug(state), citySlug: toSlug(city) };
-}
-
 async function fetchCityStores(
   stateSlug: string,
   citySlug: string
 ): Promise<Store[]> {
+  if (!stateSlug || !citySlug) return [];
   const url = `https://www.chilis.com/locations/us/${stateSlug}/${citySlug}`;
   const res = await fetch(url, {
     headers: { "User-Agent": UA, Accept: "text/html" },
@@ -62,8 +43,18 @@ export const chilis: ChainProvider = {
   fallbackPrice: 12.49,
 
   async findStores(lat, lng) {
-    const { stateSlug, citySlug } = await reverseGeocode(lat, lng);
-    let stores = await fetchCityStores(stateSlug, citySlug);
+    // Chili's has no lat/lng locator, so we resolve the city via a hardened
+    // reverse-geocode (cached, non-throwing) and fetch that city's SSR page.
+    const loc = await reverseGeocode(lat, lng);
+    if (!loc) return []; // geocoding unavailable → "no locations", never a 500
+
+    const stateSlug = toSlug(loc.stateName);
+    // Try the city page first, then fall back to the county page (some stores
+    // are filed under a broader locality than the reverse-geocoded city).
+    let stores = await fetchCityStores(stateSlug, toSlug(loc.city));
+    if (stores.length === 0 && loc.county) {
+      stores = await fetchCityStores(stateSlug, toSlug(loc.county));
+    }
 
     // The SSR page returns stores sorted by distance from the city center,
     // not necessarily our exact coordinates. Re-sort by haversine from user coords.

@@ -1,7 +1,9 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, vi, afterEach } from "vitest";
 import { readFileSync } from "fs";
 import { join } from "path";
 import { parseStoresHtml, parsePrice } from "../chilis-parse";
+import * as reverse from "../../geo/reverse";
+import { chilis } from "../chilis";
 
 const fixture = (f: string) =>
   readFileSync(join(__dirname, "../../../test-fixtures", f), "utf8");
@@ -79,6 +81,19 @@ describe("chilis parsers", () => {
       const r = parsePrice(menu);
       expect(r.isLive).toBe(true);
       expect(r.price).toBe(14.89);
+    });
+  });
+
+  describe("findStores resilience", () => {
+    afterEach(() => vi.restoreAllMocks());
+
+    it("returns [] (never throws) when reverse-geocoding is unavailable", async () => {
+      // Simulates Nominatim rate-limit/rural failure: reverseGeocode → null.
+      vi.spyOn(reverse, "reverseGeocode").mockResolvedValue(null);
+      const fetchSpy = vi.spyOn(globalThis, "fetch");
+      await expect(chilis.findStores(38.8, -99.3)).resolves.toEqual([]);
+      // Must not even attempt the Chili's city page when there's no locality.
+      expect(fetchSpy).not.toHaveBeenCalled();
     });
   });
 });
