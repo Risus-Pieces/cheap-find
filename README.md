@@ -4,7 +4,7 @@ Pick a fast food chain, see every nearby location ranked cheapest to priciest fo
 
 ## How it works
 
-1. Choose a chain from the chip picker (Chipotle, Taco Bell, Wendy's, Domino's, Marco's Pizza, Chili's, Whataburger, Popeyes).
+1. Choose a chain from the chip picker (Chipotle, Taco Bell, Wendy's, Domino's, Marco's Pizza, Chili's, Whataburger, Popeyes, Wingstop).
 2. Search an address or ZIP, or tap **Near me** to use GPS.
 3. The app fetches nearby locations, then progressively loads prices for each store directly from the chain's public ordering backend.
 4. Locations appear on a map and in a scrollable list, sorted by price (or distance — toggle in the sort bar). The cheapest store gets a badge. Tap any card or marker to zoom in.
@@ -24,6 +24,7 @@ Prices are cached in memory for 5 minutes server-side, so rapid re-searches don'
 | Chili's | Oldtimer with Cheese | Live — per-store online ordering price |
 | Whataburger | Whataburger | Live — per-store online ordering price (regional; mostly TX/South) |
 | Popeyes | Classic Chicken Sandwich | Live — per-store online ordering price |
+| Wingstop | 5 Classic Wings | Live — per-store online ordering price |
 
 **Live** means prices are fetched server-side from the chain's own public ordering API on demand.
 
@@ -49,7 +50,7 @@ Open [http://localhost:3000](http://localhost:3000).
 | `npm run dev` | Next.js dev server with hot reload |
 | `npm run build` | Production build |
 | `npm run start` | Serve the production build |
-| `npm test` | Run the full Vitest suite (49 tests, no network) |
+| `npm test` | Run the full Vitest suite (64 tests, no network) |
 | `npm run smoke` | Hit each chain's live API and print one result per chain |
 
 ## Architecture
@@ -78,6 +79,7 @@ lib/chains/
   chilis-parse.ts / chilis.ts
   whataburger-parse.ts / whataburger.ts
   popeyes-parse.ts / popeyes.ts
+  wingstop-parse.ts / wingstop.ts
   __tests__/                Vitest unit tests (real API fixtures, no network)
 
 test-fixtures/              Recorded API responses used by the unit tests

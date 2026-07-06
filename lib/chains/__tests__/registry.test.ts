@@ -4,7 +4,7 @@ import { getChain, listChains } from "../registry";
 describe("chain registry", () => {
   it("lists all live chains", () => {
     expect(listChains().map((c) => c.id).sort()).toEqual(
-      ["chilis", "chipotle", "dominos", "marcos", "popeyes", "tacobell", "wendys", "whataburger"]
+      ["chilis", "chipotle", "dominos", "marcos", "popeyes", "tacobell", "wendys", "whataburger", "wingstop"]
     );
   });
 

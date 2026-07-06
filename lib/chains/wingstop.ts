@@ -5,7 +5,7 @@ const UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36";
 
 export const wingstop: ChainProvider = {
-  id: "wingstop" as ChainProvider["id"],
+  id: "wingstop",
   name: "Wingstop",
   benchmarkItem: "5 Classic Wings",
   accentColor: "#00573F",
