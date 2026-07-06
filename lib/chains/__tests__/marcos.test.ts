@@ -89,9 +89,10 @@ describe("marcos parsePrice", () => {
     expect(r.price).toBe(14.99);
   });
 
-  it("returns isLive:false when ITMS is empty", () => {
+  it("returns the fallback price (not 0) when ITMS is empty", () => {
     const r = parsePrice({ ITMS: [] });
     expect(r.isLive).toBe(false);
+    expect(r.price).toBe(12.99);
   });
 
   it("returns isLive:false when IID 12 is missing", () => {
@@ -99,9 +100,10 @@ describe("marcos parsePrice", () => {
     expect(r.isLive).toBe(false);
   });
 
-  it("returns isLive:false when SZID 2 is missing", () => {
+  it("returns the fallback price (not 0) when SZID 2 is missing", () => {
     const r = parsePrice({ ITMS: [{ IID: 12, PRCS: [{ SZID: 1, PRC: 9.99 }] }] });
     expect(r.isLive).toBe(false);
+    expect(r.price).toBe(12.99);
   });
 
   it("returns isLive:false for completely empty input", () => {

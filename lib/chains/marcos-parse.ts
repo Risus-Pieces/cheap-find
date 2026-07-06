@@ -85,19 +85,21 @@ export function nearestStores(
  * Extract the Medium Pepperoni Magnifico price from a store's menu JSON.
  * Looks for item IID===12, price entry SZID===2 (Medium), field PRC.
  */
+const FALLBACK = 12.99;
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function parsePrice(json: any): PriceResult {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const itms: any[] = json?.ITMS ?? [];
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const item = itms.find((i: any) => i?.IID === 12);
-  if (!item) return { price: 0, isLive: false };
+  if (!item) return { price: FALLBACK, isLive: false };
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const prcs: any[] = item?.PRCS ?? [];
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const med = prcs.find((p: any) => p?.SZID === 2 && typeof p?.PRC === "number" && p.PRC > 0);
-  if (!med) return { price: 0, isLive: false };
+  if (!med) return { price: FALLBACK, isLive: false };
 
   return { price: med.PRC as number, isLive: true };
 }
