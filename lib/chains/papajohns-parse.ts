@@ -5,13 +5,13 @@ const FALLBACK = 14.99;
 const BENCHMARK = "14 Inch Original Pepperoni Pizza";
 
 /**
- * stores.getCarryoutStores (POST) → { result: { data: { json: Store[] } } }.
+ * stores.getCarryoutStores (POST) → { result: { data: { json: { stores: Store[] } } } }.
  * Each store: { id, location:{street,latitude,longitude,city,state,postalCode}, distance }.
  */
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function parseStores(json: any): Store[] {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const raw: any[] = json?.result?.data?.json ?? [];
+  const raw: any[] = json?.result?.data?.json?.stores ?? [];
   if (!Array.isArray(raw)) return [];
   return raw
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
