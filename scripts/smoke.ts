@@ -10,9 +10,16 @@ async function main() {
       const stores = await chain.findStores(LAT, LNG);
       const first = stores[0];
       const price = first ? await chain.getPrice(first.id) : null;
+      const tag = price
+        ? price.isLive
+          ? "live"
+          : price.cachedAt
+            ? "cached"
+            : "estimated"
+        : "no price";
       console.log(
         `${chain.name}: ${stores.length} stores; ${first?.name ?? "-"} → ` +
-          (price ? `$${price.price} (${price.isLive ? "live" : "estimated"})` : "no price")
+          (price ? `$${price.price} (${tag})` : "no price")
       );
     } catch (err) {
       console.log(`${chain.name}: ERROR ${(err as Error).message}`);
