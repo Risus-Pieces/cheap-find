@@ -3,6 +3,11 @@ import { getChain } from "@/lib/chains/registry";
 import { TTLCache } from "@/lib/cache";
 import type { PriceResult } from "@/lib/chains/types";
 
+// Headless-scraped chains launch chromium here (Node runtime) and a cold,
+// uncached price lookup can take tens of seconds.
+export const runtime = "nodejs";
+export const maxDuration = 60;
+
 const cache = new TTLCache<PriceResult>(5 * 60 * 1000);
 
 export async function GET(

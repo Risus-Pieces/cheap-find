@@ -153,7 +153,8 @@ export const subway: ChainProvider = {
       for (const store of nearest.slice(0, PREWARM)) {
         try {
           const price = await menuPrice(fetchJson, store.id);
-          await kvSet(priceKey(store.id), price, PRICE_TTL);
+          // Only cache a real scraped price; never pin a fallback estimate.
+          if (price.cachedAt) await kvSet(priceKey(store.id), price, PRICE_TTL);
         } catch {
           /* skip a failed store, keep prewarming the rest */
         }
@@ -174,7 +175,8 @@ export const subway: ChainProvider = {
       menuPrice(fetchJson, storeId)
     );
     if (!ok || !data) return { price: this.fallbackPrice, isLive: false };
-    await kvSet(priceKey(storeId), data, PRICE_TTL);
+    // Only cache a real scraped price; a parse miss returns a fallback we don't pin.
+    if (data.cachedAt) await kvSet(priceKey(storeId), data, PRICE_TTL);
     return data;
   },
 };

@@ -3,6 +3,11 @@ import { getChain } from "@/lib/chains/registry";
 import { TTLCache } from "@/lib/cache";
 import type { Store } from "@/lib/chains/types";
 
+// Headless-scraped chains (Papa John's/Panera/Subway) launch chromium here, which
+// needs the Node runtime and can take tens of seconds on a cold, uncached lookup.
+export const runtime = "nodejs";
+export const maxDuration = 60;
+
 const cache = new TTLCache<Store[]>(5 * 60 * 1000);
 
 export async function GET(
