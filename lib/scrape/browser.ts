@@ -81,15 +81,19 @@ export async function withBrowserSession<T>(
 ): Promise<ScrapeResult<T>> {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let browser: any = null;
+  const t0 = Date.now();
   try {
+    console.error(`[scrape] start backend=${backend()} origin=${origin}`);
     browser = await launch();
+    console.error(`[scrape] launched (+${Date.now() - t0}ms)`);
     const context = await browser.newContext({
       userAgent: UA,
       viewport: { width: 1280, height: 900 },
       locale: "en-US",
     });
     const page = await context.newPage();
-    await page.goto(origin, { waitUntil: "domcontentloaded", timeout: NAV_TIMEOUT_MS });
+    const resp = await page.goto(origin, { waitUntil: "domcontentloaded", timeout: NAV_TIMEOUT_MS });
+    console.error(`[scrape] navigated status=${resp?.status?.() ?? "?"} (+${Date.now() - t0}ms)`);
     await page.waitForTimeout(CHALLENGE_SETTLE_MS);
 
     const fetchJson: FetchJson = async (url, init) => {
@@ -124,8 +128,15 @@ export async function withBrowserSession<T>(
     const runInPage: RunInPage = (fn, arg) => page.evaluate(fn as any, arg as any);
 
     const data = await inPage(fetchJson, runInPage);
+    console.error(`[scrape] inPage done ok (+${Date.now() - t0}ms)`);
     return { data, ok: true };
-  } catch {
+  } catch (err) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const e = err as any;
+    console.error(
+      `[scrape] FAILED (+${Date.now() - t0}ms): ${e?.message ?? e}`,
+      String(e?.stack ?? "").split("\n").slice(0, 3).join(" | ")
+    );
     return { data: null, ok: false };
   } finally {
     if (browser) {
