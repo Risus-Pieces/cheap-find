@@ -1,0 +1,48 @@
+{
+ "note": "Trimmed cafe/search response (POST {latitude,longitude} to www-api.panerabread.com/www-api/public/cafe/search?openCafes=true&locale=en-US). Cafe list captured live near Chicago 2026-07-08; array lives at cafeList. Each cafe has cafeId/cafeName/cafeLocation{addressLine1,city,countryDivision,postalCode,latitude,longitude}. Full response also carries cafeHours/cafeFeatures/etc, stripped here.",
+ "deliveryUnavailable": false,
+ "cafeList": [
+  {
+   "cafeId": "606477",
+   "cafeName": "Chicago - N State St (North of E Randolph St)",
+   "cafePhone": "312-646-3644",
+   "cafeLocation": {
+    "addressLine1": "168 N State St",
+    "city": "Chicago",
+    "countryDivision": "IL",
+    "postalCode": "60601",
+    "latitude": 41.885086,
+    "longitude": -87.628179,
+    "distance": 788.3143715661045
+   }
+  },
+  {
+   "cafeId": "600987",
+   "cafeName": "Chicago - S Canal St (North of Roosevelt Rd)",
+   "cafePhone": "312-786-1761",
+   "cafeLocation": {
+    "addressLine1": "1101 South Canal Street",
+    "city": "Chicago",
+    "countryDivision": "IL",
+    "postalCode": "60607",
+    "latitude": 41.868733,
+    "longitude": -87.638967,
+    "distance": 1288.7784382669265
+   }
+  },
+  {
+   "cafeId": "607040",
+   "cafeName": "Chicago - E Erie St @ N State St",
+   "cafePhone": "312-646-5960",
+   "cafeLocation": {
+    "addressLine1": "1 E Erie St",
+    "city": "Chicago",
+    "countryDivision": "IL",
+    "postalCode": "60611",
+    "latitude": 41.893978,
+    "longitude": -87.627942,
+    "distance": 1772.2399986421271
+   }
+  }
+ ]
+}

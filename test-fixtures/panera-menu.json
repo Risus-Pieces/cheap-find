@@ -1,0 +1,29 @@
+{
+ "note": "Trimmed menu placards response (GET www-api.panerabread.com/www-api/public/menu/placards/{cafeId}/version/{mnavPlacard}/{mnavPlacardSchedule}/en-US?cloud=false). Cafe 606477 (Chicago) captured live 2026-07-08 via versions from /public/menu/versions/{cafeId}. Items live in an OBJECT keyed by plcId (not an array) at .placards. Multiple items can share the same display name (\"Broccoli Cheddar Soup\" appears for cup/bowl/bread-bowl sizes) so the parser must also match imgKey to pick the bowl size (\"broccoli-cheddar-soup-bowl\", not -cup/-breadbowl/-group). Confirmed per-cafe price variance (Chicago cafe 606477 bowl=8.99 vs LA cafe 606381 bowl=9.59 on 2026-07-08).",
+ "placards": {
+  "-12015": {
+   "name": "Broccoli Cheddar Soup",
+   "plcId": -12015,
+   "imgKey": "broccoli-cheddar-soup-bowl",
+   "productType": "SOUP",
+   "defaultItemId": 647281,
+   "price": 8.99
+  },
+  "-12016": {
+   "name": "Broccoli Cheddar Soup",
+   "plcId": -12016,
+   "imgKey": "broccoli-cheddar-soup-cup",
+   "productType": "SOUP",
+   "defaultItemId": 647286,
+   "price": 5.49
+  },
+  "49": {
+   "name": "Chips",
+   "plcId": 49,
+   "imgKey": "panera-kettle-cooked-potato-chips-side",
+   "productType": "SIDE",
+   "defaultItemId": 49,
+   "price": 1.49
+  }
+ }
+}
