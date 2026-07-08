@@ -46,7 +46,7 @@ async function menuPrice(fetchJson: FetchJson, cafeId: string): Promise<PriceRes
 }
 
 export const panera: ChainProvider = {
-  id: "panera" as ChainProvider["id"],
+  id: "panera",
   name: "Panera Bread",
   benchmarkItem: "Broccoli Cheddar Soup",
   accentColor: "#6C7A3A",

@@ -4,7 +4,7 @@ Pick a fast food chain, see every nearby location ranked cheapest to priciest fo
 
 ## How it works
 
-1. Choose a chain from the chip picker (Chipotle, Taco Bell, Wendy's, Domino's, Marco's Pizza, Chili's, Whataburger, Popeyes, Wingstop, Papa John's).
+1. Choose a chain from the chip picker (Chipotle, Taco Bell, Wendy's, Domino's, Marco's Pizza, Chili's, Whataburger, Popeyes, Wingstop, Papa John's, Panera Bread).
 2. Search an address or ZIP, or tap **Near me** to use GPS.
 3. The app fetches nearby locations, then progressively loads prices for each store directly from the chain's public ordering backend.
 4. Locations appear on a map and in a scrollable list, sorted by price (or distance — toggle in the sort bar). The cheapest store gets a badge. Tap any card or marker to zoom in.
@@ -26,6 +26,7 @@ Prices are cached in memory for 5 minutes server-side, so rapid re-searches don'
 | Popeyes | Classic Chicken Sandwich | Live — per-store online ordering price |
 | Wingstop | 5 Classic Wings | Live — per-store online ordering price |
 | Papa John's | Large Pepperoni Pizza | Cached — headless-scraped through the Akamai bot-wall, cached per store |
+| Panera Bread | Broccoli Cheddar Soup | Cached — headless-scraped through the Akamai bot-wall, cached per store |
 
 **Live** means prices are fetched server-side from the chain's own public ordering API on demand.
 
@@ -61,7 +62,7 @@ Open [http://localhost:3000](http://localhost:3000).
 | `npm run dev` | Next.js dev server with hot reload |
 | `npm run build` | Production build |
 | `npm run start` | Serve the production build |
-| `npm test` | Run the full Vitest suite (64 tests, no network) |
+| `npm test` | Run the full Vitest suite (75 tests, no network) |
 | `npm run smoke` | Hit each chain's live API and print one result per chain |
 
 ## Architecture
@@ -92,6 +93,7 @@ lib/chains/
   popeyes-parse.ts / popeyes.ts
   wingstop-parse.ts / wingstop.ts
   papajohns-parse.ts / papajohns.ts   (headless-scraped)
+  panera-parse.ts / panera.ts         (headless-scraped)
 
 lib/scrape/
   browser.ts                Headless browser session that clears Akamai (swappable backend)

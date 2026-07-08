@@ -19,7 +19,7 @@ const barlowCondensed = Barlow_Condensed({
 
 export const metadata: Metadata = {
   title: "FastFind — Compare Fast Food Prices Near You",
-  description: "Find the cheapest Chipotle, Taco Bell, Wendy's, Domino's, Marco's Pizza, Chili's, Whataburger, Popeyes, Wingstop, and Papa John's near you. Per-location prices on an interactive map.",
+  description: "Find the cheapest Chipotle, Taco Bell, Wendy's, Domino's, Marco's Pizza, Chili's, Whataburger, Popeyes, Wingstop, Papa John's, and Panera near you. Per-location prices on an interactive map.",
 };
 
 export default function RootLayout({
