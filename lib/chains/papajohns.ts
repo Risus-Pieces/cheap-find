@@ -35,7 +35,7 @@ async function menuPrice(fetchJson: FetchJson, storeId: string): Promise<PriceRe
 }
 
 export const papajohns: ChainProvider = {
-  id: "papajohns" as ChainProvider["id"],
+  id: "papajohns",
   name: "Papa John's",
   benchmarkItem: "Large Pepperoni Pizza",
   accentColor: "#046A38",

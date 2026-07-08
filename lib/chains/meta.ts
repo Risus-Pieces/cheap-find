@@ -10,4 +10,5 @@ export const CHAIN_META: ChainMeta[] = [
   { id: "whataburger", name: "Whataburger", benchmarkItem: "Whataburger", accentColor: "#FF5000", fallbackPrice: 5.49 },
   { id: "popeyes", name: "Popeyes", benchmarkItem: "Classic Chicken Sandwich", accentColor: "#F47216", fallbackPrice: 5.49 },
   { id: "wingstop", name: "Wingstop", benchmarkItem: "5 Classic Wings", accentColor: "#00573F", fallbackPrice: 6.99 },
+  { id: "papajohns", name: "Papa John's", benchmarkItem: "Large Pepperoni Pizza", accentColor: "#046A38", fallbackPrice: 14.99 },
 ];
