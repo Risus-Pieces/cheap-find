@@ -13,6 +13,16 @@
 /** In-page fetch that returns parsed JSON (or null on non-JSON / error). */
 export type FetchJson = (url: string, init?: RequestInit) => Promise<unknown>;
 
+/**
+ * Escape hatch for chains whose API needs something a plain `fetch` can't produce
+ * (e.g. Subway's guest auth token, which its own front-end JS mints client-side in
+ * response to a real UI interaction — no dedicated token endpoint exists). Runs an
+ * async function with same-session DOM access, passing a single structured-cloneable
+ * `arg` through (mirrors Playwright's own `page.evaluate(fn, arg)` shape). Prefer
+ * `fetchJson` for everything else.
+ */
+export type RunInPage = <T, A = undefined>(fn: (arg: A) => T | Promise<T>, arg?: A) => Promise<T>;
+
 export interface ScrapeResult<T> {
   data: T | null;
   ok: boolean;
@@ -67,7 +77,7 @@ async function launch(): Promise<any> {
  */
 export async function withBrowserSession<T>(
   origin: string,
-  inPage: (fetchJson: FetchJson) => Promise<T>
+  inPage: (fetchJson: FetchJson, runInPage: RunInPage) => Promise<T>
 ): Promise<ScrapeResult<T>> {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let browser: any = null;
@@ -110,7 +120,10 @@ export async function withBrowserSession<T>(
       );
     };
 
-    const data = await inPage(fetchJson);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const runInPage: RunInPage = (fn, arg) => page.evaluate(fn as any, arg as any);
+
+    const data = await inPage(fetchJson, runInPage);
     return { data, ok: true };
   } catch {
     return { data: null, ok: false };

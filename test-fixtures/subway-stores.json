@@ -1,0 +1,122 @@
+{
+ "note": "Trimmed location-search response (POST www.subway.com/api/location-search, body {customerPreferences,searchOptions:{searchType:'BY_GEO',latitude,longitude},paging,filters}, header authorization:Bearer <guest JWT>). Captured live near Chicago 41.8781,-87.6298 on 2026-07-08. Results live at .nearbyResults[], each entry has .data.locationId/.data.address/.data.geo{latitude,longitude} plus a UI-facing .resources block (unused by the parser). The guest JWT is minted client-side by Subway's own JS on first UI interaction (no dedicated token endpoint observed); withBrowserSession must drive one throwaway search before calling the API directly for the real target coords.",
+ "formattedAddress": null,
+ "paging": {
+  "maximumResults": 15,
+  "totalResults": 15
+ },
+ "nearbyResults": [
+  {
+   "resources": {
+    "locationListingNumber": 1,
+    "formattedCityState": "Chicago, IL 60605-1101, US",
+    "distanceToLocationShort": "0.1 mi",
+    "phoneNumber": "312-583-1235",
+    "openNowStatus": "Currently Closed",
+    "restaurantNumber": "26771-0"
+   },
+   "data": {
+    "locationId": "26771-0",
+    "address": {
+     "address1": "35 W Van Buren St.",
+     "address2": "Ste 4",
+     "address3": null,
+     "city": "Chicago",
+     "stateProvince": "IL",
+     "postalCode": "60605-1101",
+     "country": "US"
+    },
+    "geo": {
+     "latitude": 41.8767201,
+     "longitude": -87.628954
+    },
+    "canTakeOnlineOrders": true,
+    "timezone": "America/Chicago"
+   }
+  },
+  {
+   "resources": {
+    "locationListingNumber": 2,
+    "formattedCityState": "Chicago, IL 60603, US",
+    "distanceToLocationShort": "0.3 mi",
+    "phoneNumber": "312-580-0500",
+    "openNowStatus": "Open Now",
+    "restaurantNumber": "28330-0"
+   },
+   "data": {
+    "locationId": "28330-0",
+    "address": {
+     "address1": "120 S State St",
+     "address2": null,
+     "address3": null,
+     "city": "Chicago",
+     "stateProvince": "IL",
+     "postalCode": "60603",
+     "country": "US"
+    },
+    "geo": {
+     "latitude": 41.8800432,
+     "longitude": -87.6279487
+    },
+    "canTakeOnlineOrders": true,
+    "timezone": "America/Chicago"
+   }
+  },
+  {
+   "resources": {
+    "locationListingNumber": 3,
+    "formattedCityState": "Chicago, IL 60604, US",
+    "distanceToLocationShort": "0.4 mi",
+    "phoneNumber": "312-347-1100",
+    "openNowStatus": "Open Now",
+    "restaurantNumber": "3333-0"
+   },
+   "data": {
+    "locationId": "3333-0",
+    "address": {
+     "address1": "60 E Jackson Blvd",
+     "address2": null,
+     "address3": null,
+     "city": "Chicago",
+     "stateProvince": "IL",
+     "postalCode": "60604",
+     "country": "US"
+    },
+    "geo": {
+     "latitude": 41.878347,
+     "longitude": -87.625674
+    },
+    "canTakeOnlineOrders": true,
+    "timezone": "America/Chicago"
+   }
+  },
+  {
+   "resources": {
+    "locationListingNumber": 4,
+    "formattedCityState": "Chicago, IL 60606, US",
+    "distanceToLocationShort": "0.6 mi",
+    "phoneNumber": "312-263-4900",
+    "openNowStatus": "Currently Closed",
+    "restaurantNumber": "44541-0"
+   },
+   "data": {
+    "locationId": "44541-0",
+    "address": {
+     "address1": "211 W Adams St",
+     "address2": null,
+     "address3": null,
+     "city": "Chicago",
+     "stateProvince": "IL",
+     "postalCode": "60606",
+     "country": "US"
+    },
+    "geo": {
+     "latitude": 41.8791346,
+     "longitude": -87.6342102
+    },
+    "canTakeOnlineOrders": true,
+    "timezone": "America/Chicago"
+   }
+  }
+ ]
+}

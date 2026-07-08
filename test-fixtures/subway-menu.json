@@ -1,0 +1,63 @@
+{
+ "note": "Trimmed store-menu response (GET www.subway.com/api/store-menu/{locationId}?locale=en-us, header authorization:Bearer <guest JWT>). Store 26771-0 (Chicago, 35 W Van Buren St.) captured live 2026-07-08. Items live at .categories[].masterProducts[].products[]. Sizes for the same sandwich share one masterProduct (e.g. 'B.M.T.®') and are disambiguated by product.buildName: 'Footlong' vs \"6''\" (also buildTypeId 2 vs 1) at different prices — not by product name, which is identical for both sizes. Confirmed per-store price variance: this store's Footlong B.M.T. is 11.89, vs 11.99 seen at a different Chicago store (56071-0) during discovery.",
+ "locationId": "26771-0",
+ "categories": [
+  {
+   "id": "1206",
+   "displayName": "Italians",
+   "slug": "italians",
+   "masterProducts": [
+    {
+     "id": "12988",
+     "displayName": "B.M.T.®",
+     "slug": "b-m-t",
+     "products": [
+      {
+       "id": "54012",
+       "name": "B.M.T.® Sandwich (1DM)",
+       "slug": "b-m-t",
+       "price": 11.89,
+       "buildName": "Footlong",
+       "buildTypeId": "2",
+       "available": true
+      },
+      {
+       "id": "54013",
+       "name": "B.M.T.® Sandwich (1DM)",
+       "slug": "b-m-t",
+       "price": 7.79,
+       "buildName": "6''",
+       "buildTypeId": "1",
+       "available": true
+      }
+     ]
+    },
+    {
+     "id": "12987",
+     "displayName": "Spicy Italian",
+     "slug": "spicy-italian",
+     "products": [
+      {
+       "id": "54027",
+       "name": "Spicy Italian Sandwich (1DM)",
+       "slug": "spicy-italian",
+       "price": 11.49,
+       "buildName": "Footlong",
+       "buildTypeId": "2",
+       "available": true
+      },
+      {
+       "id": "54029",
+       "name": "Spicy Italian Sandwich (1DM)",
+       "slug": "spicy-italian",
+       "price": 7.59,
+       "buildName": "6''",
+       "buildTypeId": "1",
+       "available": true
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
