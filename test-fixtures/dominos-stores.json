@@ -1,0 +1,28 @@
+{
+  "Stores": [
+    {
+      "StoreID": "2791",
+      "AddressDescription": "509 North Orleans St\nChicago, IL 60654\nN Orleans between Illinois and Grand",
+      "StoreCoordinates": {
+        "StoreLatitude": "41.8912",
+        "StoreLongitude": "-87.63678"
+      }
+    },
+    {
+      "StoreID": "2788",
+      "AddressDescription": "1234 S Canal\nChicago, IL 60607\nID & Card are REQUIRED for ALL Credit Card Orders",
+      "StoreCoordinates": {
+        "StoreLatitude": "41.866288",
+        "StoreLongitude": "-87.640256"
+      }
+    },
+    {
+      "StoreID": "9187",
+      "AddressDescription": "901 W Madison St\nChicago, IL 60607\nCorner of Madison and Peoria",
+      "StoreCoordinates": {
+        "StoreLatitude": "41.881587",
+        "StoreLongitude": "-87.649934"
+      }
+    }
+  ]
+}

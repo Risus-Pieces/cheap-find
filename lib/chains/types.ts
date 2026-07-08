@@ -1,4 +1,16 @@
-export type ChainId = "chipotle" | "tacobell" | "wendys" | "burgerking";
+export type ChainId =
+  | "chipotle"
+  | "tacobell"
+  | "wendys"
+  | "dominos"
+  | "marcos"
+  | "chilis"
+  | "whataburger"
+  | "popeyes"
+  | "wingstop"
+  | "papajohns"
+  | "panera"
+  | "subway";
 
 export interface Store {
   id: string;
@@ -12,6 +24,9 @@ export interface PriceResult {
   price: number;
   deliveryPrice?: number;
   isLive: boolean; // false => estimated fallback
+  // Set by headless-scraped chains: epoch ms when this price was scraped.
+  // Presence => show a "cached" badge rather than "live" or "estimated".
+  cachedAt?: number;
 }
 
 export interface ChainMeta {

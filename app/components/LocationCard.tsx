@@ -8,6 +8,16 @@ import { FOOD_IMAGES } from "@/lib/images";
 // Store augmented with a client-side image URL
 export type StoreWithImage = Store & { image: string };
 
+/** Compact relative time for cached-price badges, e.g. "just now", "2h ago", "3d ago". */
+function relativeTime(epochMs: number): string {
+  const mins = Math.max(0, Math.floor((Date.now() - epochMs) / 60000));
+  if (mins < 1) return "just now";
+  if (mins < 60) return `${mins}m ago`;
+  const hrs = Math.floor(mins / 60);
+  if (hrs < 24) return `${hrs}h ago`;
+  return `${Math.floor(hrs / 24)}d ago`;
+}
+
 // Re-export for Map.tsx compatibility
 export type { PriceResult as PriceData };
 
@@ -127,8 +137,15 @@ export default function LocationCard({
                     <span className="text-xs font-bold text-green-600 bg-green-50 border border-green-200 rounded-full px-1.5 py-0.5 uppercase tracking-wide">
                       live
                     </span>
+                  ) : price.cachedAt != null ? (
+                    <span
+                      title={`Cached price, scraped ${relativeTime(price.cachedAt)}`}
+                      className="text-xs font-bold text-amber-600 bg-amber-50 border border-amber-200 rounded-full px-1.5 py-0.5 lowercase tracking-wide"
+                    >
+                      cached · {relativeTime(price.cachedAt)}
+                    </span>
                   ) : (
-                    <span className="text-xs font-bold text-amber-600 bg-amber-50 border border-amber-200 rounded-full px-1.5 py-0.5 uppercase tracking-wide">
+                    <span className="text-xs font-bold text-gray-500 bg-gray-100 border border-gray-200 rounded-full px-1.5 py-0.5 uppercase tracking-wide">
                       est.
                     </span>
                   )}

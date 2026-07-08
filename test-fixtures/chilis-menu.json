@@ -1,0 +1,36 @@
+{
+  "imagepath": null,
+  "categories": [
+    {
+      "name": "Big Mouth Burgers®",
+      "products": [
+        {
+          "name": "Big Smasher™ Burger",
+          "oloProductId": 73154392,
+          "categoryName": "Big Mouth Burgers®",
+          "cost": 15.99,
+          "isAvailable": true
+        },
+        {
+          "name": "Oldtimer® Burger W/ Cheese",
+          "oloProductId": 16995658,
+          "categoryName": "Big Mouth Burgers®",
+          "cost": 14.89,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "name": "3 For Me®",
+      "products": [
+        {
+          "name": "Oldtimer® Burger W/ Cheese",
+          "oloProductId": 50557821,
+          "categoryName": "3 For Me®",
+          "cost": 12.99,
+          "isAvailable": true
+        }
+      ]
+    }
+  ]
+}

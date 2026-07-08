@@ -1,0 +1,47 @@
+{
+  "data": {
+    "restaurants": {
+      "nodes": [
+        {
+          "_id": "restaurant_90000",
+          "name": "156 N Wabash Ave. Chicago, Illinois 60601 - USA",
+          "number": "13060",
+          "physicalAddress": {
+            "address1": "156 N Wabash Ave.",
+            "city": "Chicago",
+            "stateProvince": "Illinois",
+            "postalCode": "60601"
+          },
+          "latitude": 41.88483,
+          "longitude": -87.626489
+        },
+        {
+          "_id": "restaurant_82175",
+          "name": "1251 S Halsted St Chicago, Illinois 60607 - USA",
+          "number": "3044",
+          "physicalAddress": {
+            "address1": "1251 S Halsted St",
+            "city": "Chicago",
+            "stateProvince": "Illinois",
+            "postalCode": "60607"
+          },
+          "latitude": 41.865715,
+          "longitude": -87.646644
+        },
+        {
+          "_id": "restaurant_89997",
+          "name": "1555 W Division St Chicago, Illinois 60642 - USA",
+          "number": "13057",
+          "physicalAddress": {
+            "address1": "1555 W Division St",
+            "city": "Chicago",
+            "stateProvince": "Illinois",
+            "postalCode": "60642"
+          },
+          "latitude": 41.903109,
+          "longitude": -87.667253
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+ "note": "Trimmed stores.getCarryoutStores response (POST {json:{latitude,longitude}}). Captured live near Chicago 2026-07-08. Store array is nested at result.data.json.stores.",
+ "result": {
+  "data": {
+   "json": {
+    "stores": [
+     {
+      "id": "4106",
+      "timeZone": "CDT",
+      "location": {
+       "street": "80 East Cermak Road",
+       "latitude": 41.85307,
+       "longitude": -87.62403,
+       "city": "Chicago",
+       "state": "IL",
+       "postalCode": "60616"
+      },
+      "phoneNumber": "(312)225-1200",
+      "distance": { "meters": 2823, "miles": 1.75 }
+     },
+     {
+      "id": "0980",
+      "location": {
+       "street": "1101 S Canal St",
+       "latitude": 41.8674,
+       "longitude": -87.6394,
+       "city": "Chicago",
+       "state": "IL",
+       "postalCode": "60607"
+      },
+      "distance": { "miles": 2.1 }
+     }
+    ]
+   }
+  }
+ }
+}

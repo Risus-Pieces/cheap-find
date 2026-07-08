@@ -1,0 +1,25 @@
+{
+ "note": "Trimmed product.getByStore response (GET ?input={json:{storeId}}). Products array lives at result.data.json.products; each item has name/sizeId/displayPrice/regularMenuPrice (field names captured live 2026-07-07). Benchmark 'Large Pepperoni Pizza' = '14 Inch Original Pepperoni Pizza'. Prices here are representative of the confirmed shape.",
+ "result": {
+  "data": {
+   "json": {
+    "products": [
+     {
+      "name": "12 Inch Original Pepperoni Pizza",
+      "sizeId": "12ORIG",
+      "displayPrice": "$11.99",
+      "regularMenuPrice": 11.99,
+      "papaSize": "MEDIUM"
+     },
+     {
+      "name": "14 Inch Original Pepperoni Pizza",
+      "sizeId": "14ORIG",
+      "displayPrice": "$13.99",
+      "regularMenuPrice": 13.99,
+      "papaSize": "LARGE"
+     }
+    ]
+   }
+  }
+ }
+}

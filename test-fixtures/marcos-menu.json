@@ -1,0 +1,15 @@
+{
+  "ITMS": [
+    {
+      "IID": 12,
+      "ICID": 1,
+      "INAMS": [{"NAM": "Pepperoni Magnifico®", "CULT": "en-us"}],
+      "PRCS": [
+        {"PGID": 2674, "SZID": 1, "MIPRC": 14.99, "PRC": 11.99, "MXPRC": -26.99, "PMPRC": 1.5, "TXIC": false},
+        {"PGID": 2674, "SZID": 2, "MIPRC": 18.99, "PRC": 14.99, "MXPRC": -34.99, "PMPRC": 2.0, "TXIC": false},
+        {"PGID": 2674, "SZID": 3, "MIPRC": 21.99, "PRC": 17.19, "MXPRC": -41.19, "PMPRC": 2.4, "TXIC": false},
+        {"PGID": 2674, "SZID": 4, "MIPRC": 25.99, "PRC": 20.39, "MXPRC": -48.39, "PMPRC": 2.8, "TXIC": false}
+      ]
+    }
+  ]
+}
