@@ -4,7 +4,7 @@ Pick a fast food chain, see every nearby location ranked cheapest to priciest fo
 
 ## How it works
 
-1. Choose a chain from the chip picker (Chipotle, Taco Bell, Wendy's, Domino's, Marco's Pizza, Chili's, Whataburger, Popeyes, Wingstop).
+1. Choose a chain from the chip picker (Chipotle, Taco Bell, Wendy's, Domino's, Marco's Pizza, Chili's, Whataburger, Popeyes, Wingstop, Papa John's).
 2. Search an address or ZIP, or tap **Near me** to use GPS.
 3. The app fetches nearby locations, then progressively loads prices for each store directly from the chain's public ordering backend.
 4. Locations appear on a map and in a scrollable list, sorted by price (or distance — toggle in the sort bar). The cheapest store gets a badge. Tap any card or marker to zoom in.
@@ -25,10 +25,21 @@ Prices are cached in memory for 5 minutes server-side, so rapid re-searches don'
 | Whataburger | Whataburger | Live — per-store online ordering price (regional; mostly TX/South) |
 | Popeyes | Classic Chicken Sandwich | Live — per-store online ordering price |
 | Wingstop | 5 Classic Wings | Live — per-store online ordering price |
+| Papa John's | Large Pepperoni Pizza | Cached — headless-scraped through the Akamai bot-wall, cached per store |
 
 **Live** means prices are fetched server-side from the chain's own public ordering API on demand.
 
-**Estimated** means a hardcoded national average is displayed. The app degrades gracefully to estimated prices for any chain if its upstream API is unavailable.
+**Cached** means the price is pulled by a headless browser that clears the chain's bot-wall (Akamai) and reads the chain's own menu API, then cached (12h) in Vercel KV. Only the first inquiry for a store pays the scrape cost. Shown with a "cached · <time ago>" badge.
+
+**Estimated** means a hardcoded national average is displayed. The app degrades gracefully to estimated prices for any chain if its upstream API (or a scrape) is unavailable.
+
+### Scraped-chain configuration
+
+- `SCRAPE_BROWSER` — `vercel` (default in prod; `@sparticuz/chromium` in the function), `browserless` (hosted browser via `BROWSERLESS_WS`, for when a datacenter IP gets blocked), or `local` (default in dev; full Playwright).
+- `KV_REST_API_URL` / `KV_REST_API_TOKEN` — Vercel KV for the scrape cache. Absent → falls back to an in-memory cache (fine for local/dev).
+- `npm run smoke:scrape` runs one real local scrape per scraped chain and prints the price.
+
+**Not included** (investigated; not reachable without paid residential proxies): Five Guys, Raising Cane's (Cloudflare), Panda Express (DataDome), plus Chick-fil-A / Starbucks / Dunkin' / Baskin-Robbins (no public per-store prices).
 
 Prices reflect online ordering / pickup prices, which may differ from in-store walk-in prices.
 
@@ -80,6 +91,11 @@ lib/chains/
   whataburger-parse.ts / whataburger.ts
   popeyes-parse.ts / popeyes.ts
   wingstop-parse.ts / wingstop.ts
+  papajohns-parse.ts / papajohns.ts   (headless-scraped)
+
+lib/scrape/
+  browser.ts                Headless browser session that clears Akamai (swappable backend)
+  cache.ts                  Vercel KV cache with in-memory fallback
   __tests__/                Vitest unit tests (real API fixtures, no network)
 
 test-fixtures/              Recorded API responses used by the unit tests
