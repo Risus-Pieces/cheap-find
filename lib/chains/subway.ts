@@ -127,7 +127,7 @@ async function menuPrice(fetchJson: FetchJson, storeId: string): Promise<PriceRe
 }
 
 export const subway: ChainProvider = {
-  id: "subway" as ChainProvider["id"],
+  id: "subway",
   name: "Subway",
   benchmarkItem: "Footlong Italian B.M.T.",
   accentColor: "#008C15",

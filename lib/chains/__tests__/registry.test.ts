@@ -4,7 +4,7 @@ import { getChain, listChains } from "../registry";
 describe("chain registry", () => {
   it("lists all live chains", () => {
     expect(listChains().map((c) => c.id).sort()).toEqual(
-      ["chilis", "chipotle", "dominos", "marcos", "panera", "papajohns", "popeyes", "tacobell", "wendys", "whataburger", "wingstop"]
+      ["chilis", "chipotle", "dominos", "marcos", "panera", "papajohns", "popeyes", "subway", "tacobell", "wendys", "whataburger", "wingstop"]
     );
   });
 
@@ -13,6 +13,6 @@ describe("chain registry", () => {
   });
 
   it("returns undefined for an unknown id", () => {
-    expect(getChain("subway")).toBeUndefined();
+    expect(getChain("olivegarden")).toBeUndefined();
   });
 });

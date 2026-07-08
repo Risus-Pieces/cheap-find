@@ -10,6 +10,7 @@ import { popeyes } from "./popeyes";
 import { wingstop } from "./wingstop";
 import { papajohns } from "./papajohns";
 import { panera } from "./panera";
+import { subway } from "./subway";
 
 const providers: Record<ChainId, ChainProvider> = {
   chipotle,
@@ -23,6 +24,7 @@ const providers: Record<ChainId, ChainProvider> = {
   wingstop,
   papajohns,
   panera,
+  subway,
 };
 
 export function getChain(id: string): ChainProvider | undefined {

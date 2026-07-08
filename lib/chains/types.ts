@@ -9,7 +9,8 @@ export type ChainId =
   | "popeyes"
   | "wingstop"
   | "papajohns"
-  | "panera";
+  | "panera"
+  | "subway";
 
 export interface Store {
   id: string;
