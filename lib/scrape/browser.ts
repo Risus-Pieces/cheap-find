@@ -44,10 +44,17 @@ function backend(): "local" | "vercel" | "browserless" {
 async function launch(): Promise<any> {
   const which = backend();
   if (which === "browserless") {
+    // Hosted browser (Browserless / Browserbase / etc.). BROWSERLESS_WS is the
+    // provider's WebSocket endpoint incl. token. Try CDP first, then Playwright's
+    // native protocol, so either endpoint style works without extra config.
     const { chromium } = await import("playwright-core");
     const ws = process.env.BROWSERLESS_WS;
     if (!ws) throw new Error("BROWSERLESS_WS not set");
-    return chromium.connectOverCDP(ws);
+    try {
+      return await chromium.connectOverCDP(ws);
+    } catch {
+      return await chromium.connect(ws);
+    }
   }
   if (which === "vercel") {
     const chromium = (await import("@sparticuz/chromium")).default;
