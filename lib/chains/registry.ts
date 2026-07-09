@@ -10,9 +10,13 @@ import { popeyes } from "./popeyes";
 import { wingstop } from "./wingstop";
 import { papajohns } from "./papajohns";
 import { panera } from "./panera";
-import { subway } from "./subway";
+// Subway is implemented (lib/chains/subway.ts) but unregistered: Akamai's HTTP/2
+// fingerprinting blocks it through hosted browsers (works only with a local stealth
+// browser or a paid residential-proxy add-on). Re-add `subway` below to re-enable.
 
-const providers: Record<ChainId, ChainProvider> = {
+// Partial: not every ChainId must be registered (e.g. subway is implemented but
+// intentionally left out until it has a hosted browser that beats Akamai's HTTP/2 wall).
+const providers: Partial<Record<ChainId, ChainProvider>> = {
   chipotle,
   tacobell,
   wendys,
@@ -24,7 +28,6 @@ const providers: Record<ChainId, ChainProvider> = {
   wingstop,
   papajohns,
   panera,
-  subway,
 };
 
 export function getChain(id: string): ChainProvider | undefined {

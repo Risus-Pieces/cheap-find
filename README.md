@@ -27,7 +27,6 @@ Prices are cached in memory for 5 minutes server-side, so rapid re-searches don'
 | Wingstop | 5 Classic Wings | Live — per-store online ordering price |
 | Papa John's | Large Pepperoni Pizza | Cached — headless-scraped through the Akamai bot-wall, cached per store |
 | Panera Bread | Broccoli Cheddar Soup | Cached — headless-scraped through the Akamai bot-wall, cached per store |
-| Subway | Footlong Italian B.M.T. | Cached — headless-scraped through the Akamai bot-wall, cached per store |
 
 **Live** means prices are fetched server-side from the chain's own public ordering API on demand.
 
@@ -95,7 +94,7 @@ lib/chains/
   wingstop-parse.ts / wingstop.ts
   papajohns-parse.ts / papajohns.ts   (headless-scraped)
   panera-parse.ts / panera.ts         (headless-scraped)
-  subway-parse.ts / subway.ts         (headless-scraped)
+  subway-parse.ts / subway.ts         (headless-scraped; unregistered — Akamai HTTP2 wall)
 
 lib/scrape/
   browser.ts                Headless browser session that clears Akamai (swappable backend)
